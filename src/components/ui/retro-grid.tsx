@@ -22,12 +22,12 @@ interface RetroGridProps extends React.HTMLAttributes<HTMLDivElement> {
   opacity?: number;
   /**
    * Grid line color in light mode
-   * @default "#6366f1"
+   * @default "#D295BF"
    */
   lightLineColor?: string;
   /**
    * Grid line color in dark mode
-   * @default "#818cf8"
+   * @default "#8DB580"
    */
   darkLineColor?: string;
 }
@@ -36,9 +36,9 @@ export function RetroGrid({
   className,
   angle = 65,
   cellSize = 60,
-  opacity = 0.5,
-  lightLineColor = "#6366f1",
-  darkLineColor = "#818cf8",
+  opacity = 0.3,
+  lightLineColor = "#D295BF",
+  darkLineColor = "#8DB580",
   ...props
 }: RetroGridProps) {
   const gridStyles = {

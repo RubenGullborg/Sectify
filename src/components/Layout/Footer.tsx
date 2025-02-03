@@ -6,13 +6,27 @@ interface FooterProps {
 
 const Footer: React.FC<FooterProps> = ({ className = "" }) => {
   return (
-    <footer className={`bg-background py-8 relative ${className}`}>
+    <footer
+      className={`border-t border-sectifyAsh bg-background py-8 relative ${className}`}
+    >
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
-          <p>© 2025 Sectify. All rights reserved.</p>
+          <p className="text-sectifyBrown">
+            © 2025 Sectify. All rights reserved.
+          </p>
           <div className="flex gap-4">
-            <a href="/privacy">Privacy</a>
-            <a href="/terms">Terms</a>
+            <a
+              href="/privacy"
+              className="text-sectifyBrown hover:text-sectifyPink transition-colors"
+            >
+              Privacy
+            </a>
+            <a
+              href="/terms"
+              className="text-sectifyBrown hover:text-sectifyPink transition-colors"
+            >
+              Terms
+            </a>
           </div>
         </div>
       </div>
