@@ -1,18 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Dosis } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Layout/Header";
-//import Sidebar from "@/components/Layout/Sidebar";
+import Sidebar from "@/components/Layout/Sidebar";
 import Footer from "@/components/Layout/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const dosis = Dosis({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: "--font-dosis",
+  weight: ["200", "300", "400", "500", "600", "700", "800"],
 });
 
 export const metadata: Metadata = {
@@ -27,15 +23,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${dosis.variable} antialiased font-dosis`}>
         <Header />
-        <div className="flex pt-16">
-          
-
-          <main className="flex-1">{children}</main>
-          
+        <div className="flex min-h-screen pt-16">
+          <Sidebar />
+          <main className="flex-1 ml-80 p-6">{children}</main>
         </div>
         <Footer />
       </body>
