@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 const Header = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 h-16 bg-background border-b">
+    <header className="fixed top-0 left-0 right-0 h-16 bg-background">
       <div className="container mx-auto px-4 h-full flex items-center justify-between">
         <Link href="/" className="text-xl font-bold">Sectify</Link>
         <nav>

@@ -6,7 +6,7 @@ interface FooterProps {
 
 const Footer: React.FC<FooterProps> = ({ className = "" }) => {
   return (
-    <footer className={`border-t bg-background py-8 relative ${className}`}>
+    <footer className={`bg-background py-8 relative ${className}`}>
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <p>© 2025 Sectify. All rights reserved.</p>

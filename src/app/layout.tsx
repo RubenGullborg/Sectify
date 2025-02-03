@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Dosis } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Layout/Header";
-import Sidebar from "@/components/Layout/Sidebar";
+//import Sidebar from "@/components/Layout/Sidebar";
 import Footer from "@/components/Layout/Footer";
 
 const dosis = Dosis({
@@ -25,10 +25,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${dosis.variable} antialiased font-dosis`}>
         <Header />
-        <div className="flex min-h-screen pt-16">
-          <Sidebar />
-          <main className="flex-1 ml-80 p-6">{children}</main>
-        </div>
+        
+          <main className="">{children}</main>
+        
         <Footer />
       </body>
     </html>
