@@ -3,6 +3,10 @@
 import React, { useState } from "react";
 import Link from "next/link";
 
+{
+  /* NEEDS TO BE FIXED TO BE ABSOLUTE POSITIONED AND DYNAMIC MAPPING OVER THE COMPONENTS */
+}
+
 const Sidebar = () => {
   const [isSectionsOpen, setIsSectionsOpen] = useState(true);
 

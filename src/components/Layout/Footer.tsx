@@ -27,6 +27,12 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
             >
               Terms
             </a>
+            <a
+              href="/roadmap"
+              className="text-sectifyBrown hover:text-sectifyPink transition-colors"
+            >
+              Roadmap
+            </a>
           </div>
         </div>
       </div>
