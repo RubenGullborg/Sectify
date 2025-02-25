@@ -1,17 +1,25 @@
-"use client";
-import { RetroGrid } from "@/components/ui/retro-grid";
-import React from "react";
+import { FocusCards } from "@/components/ui/focus-cards";
 
-const HeroSection = () => {
-  return (
-    <section className="flex flex-col items-center justify-center h-screen bg-gray-900">
-      <RetroGrid />
-      <div className="relative text-center ">
-        <h1 className="text-7xl font-bold text-sectifyAsh">Welcome to Sectify</h1>
-        <p className="mt-4 text-lg text-sectifyAsh">Build beautiful sections with ease.</p>
-      </div>
-    </section>
-  );
-};
+export function FocusCardsDemo() {
+  const cards = [
+    {
+      title: "Forest Adventure",
+      src: "/abstract-black.png",
+    },
+    {
+      title: "Valley of life",
+      src: "/waveink.png",
+    },
+    {
+      title: "Sala behta hi jayega",
+      src: "/neon.jpeg",
+    },
+    {
+      title: "Camping is for pros",
+      src: "/strong.png",
+      href: "sections",
+    },
+  ];
 
-export default HeroSection;
+  return <FocusCards cards={cards} />;
+}

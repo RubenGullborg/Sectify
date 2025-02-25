@@ -12,10 +12,10 @@ export default function AboutSection() {
           {/* Main content - Centered */}
           <div className="flex max-w-3xl flex-col items-center justify-center space-y-8 text-center">
             <div className="space-y-6">
-              <div className="inline-block rounded-lg border border-sectifyGreen/20 bg-sectifyPink px-4 py-1.5 text-sm text-white font-medium">
+              <div className="inline-block rounded-3xl border border-sectifyGreen/20 bg-sectifyPink px-4 py-1.5 text-sm text-white font-medium">
                 About Sectify
               </div>
-              <h2 className="text-4xl font-bold text-white md:text-5xl lg:text-6xl">
+              <h2 className="text-4xl font-bold text-white md:text-5xl lg:text-8xl">
                 <span className="inline-block">Prebuilt Sections </span>{" "}
                 <span className="mt-2 block text-sectifyAsh">
                   for Effortless UI
@@ -31,7 +31,7 @@ export default function AboutSection() {
             <div className="flex flex-col gap-4 sm:flex-row">
               <Button
                 size="lg"
-                className="group rounded-3xl border-white bg-sectifyGreen text-white hover:bg-white hover:text-sectifyPink hover:border-white"
+                className="group rounded-xl border-white bg-sectifyGreen text-white hover:bg-white hover:text-sectifyPink hover:border-white"
               >
                 <span className="relative flex items-center gap-2">
                   <Code2 className="h-4 w-4" />
