@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dosis.variable} antialiased font-dosis`}>
+      <body className={`${dosis.variable} antialiased font-dosis pt-16`}>
         <Header />
         
           <main className="">{children}</main>
