@@ -34,10 +34,10 @@ interface RetroGridProps extends React.HTMLAttributes<HTMLDivElement> {
 
 export function RetroGrid({
   className,
-  angle = 65,
-  cellSize = 60,
-  opacity = 0.3,
-  lightLineColor = "#D295BF",
+  angle = 80,
+  cellSize = 45,
+  opacity = 0.2,
+  lightLineColor = "#c2cfb2 ",
   darkLineColor = "#8DB580",
   ...props
 }: RetroGridProps) {
