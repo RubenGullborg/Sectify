@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { Dosis } from "next/font/google";
+import { Zen_Dots } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Layout/Header";
 //import Sidebar from "@/components/Layout/Sidebar";
 import Footer from "@/components/Layout/Footer";
 
-const dosis = Dosis({
+const zenDots = Zen_Dots({
   subsets: ["latin"],
   variable: "--font-dosis",
-  weight: ["200", "300", "400", "500", "600", "700", "800"],
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -23,11 +23,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dosis.variable} antialiased font-dosis pt-16`}>
+      <body className={`${zenDots.variable} antialiased font-zenDots pt-16`}>
         <Header />
-        
-          <main className="">{children}</main>
-        
+
+        <main className="">{children}</main>
+
         <Footer />
       </body>
     </html>

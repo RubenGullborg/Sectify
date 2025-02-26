@@ -34,7 +34,7 @@ const GlassmorphismCard: React.FC<GlassmorphismCardProps> = ({
           <h3 className="font-semibold text-white text-lg lg:text-xl">
             {title}
           </h3>
-          <p className="text-sectifyAsh text-base lg:text-lg">
+          <p className="text-sectifyEggWhite text-base lg:text-lg">
             {description}
           </p>
         </div>

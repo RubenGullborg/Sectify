@@ -1,3 +1,4 @@
+import { Zen_Dots } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 export default {
@@ -50,14 +51,14 @@ export default {
           4: "hsl(var(--chart-4))",
           5: "hsl(var(--chart-5))",
         },
-        sectifyPink: "#D295BF",
-        sectifyFairyTale: "#6366f1",
-        sectifyBrown: "#7C6354",
-        sectifyGreen: "#8DB580",
-        sectifyAsh: "#C2CFB2",
+        sectifyDarkPurple: "#201436",
+        sectifyFairyTale: "#6900D2",
+        sectifyLightPurple: "#B4A0E5",
+        sectifyGreen: "#86DEB7",
+        sectifyEggWhite: "#FAF3DD",
       },
       fontFamily: {
-        dosis: ["var(--font-dosis)"],
+        Zen_Dots: ["var(--font-zen-dots)"],
       },
       borderRadius: {
         lg: "var(--radius)",
