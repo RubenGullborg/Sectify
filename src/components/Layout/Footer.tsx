@@ -9,16 +9,29 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
   return (
     <footer className={`py-12 relative ${className}`}>
       <div
-        className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black"
-        style={{ backdropFilter: "blur(100px)" }}
+        className="absolute inset-0"
+        style={{
+          backgroundImage: `radial-gradient(circle at 1px 1px, rgb(255 255 255 / 0.05) 1px, transparent 0)`,
+          backgroundSize: "24px 24px",
+        }}
+      />
+
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            "linear-gradient(to bottom, rgba(0,0,0,0.97), rgba(0,0,0,0.98))",
+        }}
       />
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div>
-            <h3 className="text-2xl font-bold bg-gradient-to-r from-sectifyGreen to-sectifyLightPurple bg-clip-text text-transparent mb-4">
-              Sectify
-            </h3>
+            <Link href="/" className="inline-block mb-4">
+              <h3 className="text-2xl font-bold bg-gradient-to-r from-sectifyGreen via-sectifyGreen to-sectifyLightPurple bg-clip-text text-transparent hover:opacity-90 transition-opacity">
+                Sectify
+              </h3>
+            </Link>
             <p className="text-sectifyEggWhite/60 text-sm">
               Modern UI components for your next React project. Built with
               performance and accessibility in mind.
@@ -157,19 +170,6 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
           </div>
         </div>
       </div>
-
-      <div
-        className="absolute inset-0 opacity-5"
-        style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-          backgroundSize: "30px 30px",
-        }}
-      />
-
-      <div
-        className="absolute inset-0 bg-gradient-to-b from-black via-black/95 to-black"
-        style={{ backdropFilter: "blur(100px)" }}
-      />
     </footer>
   );
 };
