@@ -12,7 +12,7 @@ export const Card = React.memo(
     setHovered,
     href, // Accept href as a prop
   }: {
-    card: any;
+    card: Card;
     index: number;
     hovered: number | null;
     setHovered: React.Dispatch<React.SetStateAction<number | null>>;
@@ -62,17 +62,31 @@ export function FocusCards({ cards }: { cards: Card[] }) {
   const [hovered, setHovered] = useState<number | null>(null);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-7xl mx-auto md:px-8 w-full my-24">
-      {cards.map((card, index) => (
-        <Card
-          key={card.title}
-          card={card}
-          index={index}
-          hovered={hovered}
-          setHovered={setHovered}
-          href={card.href || "/default-link"} // Default link if no href is provided
-        />
-      ))}
+    <div className="w-full my-24">
+      <div className="relative z-10 text-center mb-16">
+        <span className="text-sm font-medium text-sectifyFairyTale/70 mb-4 block tracking-wide uppercase">
+          Component Library
+        </span>
+        <h2 className="text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-sectifyGreen via-sectifyLightPurple to-sectifyFairyTale mb-6">
+          Build the Future
+        </h2>
+        <p className="text-xl md:text-2xl text-sectifyEggWhite/80 max-w-3xl mx-auto font-light">
+          Discover our collection of modern, interactive components designed for
+          your next project
+        </p>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-7xl mx-auto md:px-8 w-full">
+        {cards.map((card, index) => (
+          <Card
+            key={card.title}
+            card={card}
+            index={index}
+            hovered={hovered}
+            setHovered={setHovered}
+            href={card.href || "/default-link"}
+          />
+        ))}
+      </div>
     </div>
   );
 }

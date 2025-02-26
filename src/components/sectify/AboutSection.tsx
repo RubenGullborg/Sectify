@@ -31,7 +31,7 @@ export default function AboutSection() {
             <div className="flex flex-col gap-4 sm:flex-row">
               <Button
                 size="lg"
-                className="group rounded-xl  bg-sectifyFairyTale text-white hover:bg-sectifyFairyTale hover:text-sectifyGreen hover:border-sectifyGreen"
+                className="group rounded-xl rotate-1 bg-sectifyFairyTale text-white hover:bg-sectifyFairyTale hover:text-sectifyGreen transition-all duration-300 hover:scale-105 hover:rotate-2"
               >
                 <span className="relative flex items-center gap-2">
                   <Code2 className="h-4 w-4" />
@@ -40,7 +40,7 @@ export default function AboutSection() {
               </Button>
               <Button
                 size="lg"
-                className="group rounded-3xl bg-sectifyLightPurple text-white hover:bg-white hover:text-sectifyFairyTale"
+                className="group rounded-3xl bg-sectifyLightPurple text-white hover:bg-white hover:text-sectifyFairyTale transition-all duration-300 hover:scale-95 hover:rotate-1"
               >
                 Learn More
                 <span className="ml-2 inline-block transition-transform duration-200 group-hover:translate-x-1">

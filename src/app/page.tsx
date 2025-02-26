@@ -1,7 +1,5 @@
 import { FocusCardsDemo } from "@/components/sectify/HeroSection";
 import AboutSection from "@/components/sectify/AboutSection";
-import { FocusCards } from "@/components/ui/focus-cards";
-
 
 
 export default function Home() {
