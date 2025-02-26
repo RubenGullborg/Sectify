@@ -64,7 +64,7 @@ export function FocusCards({ cards }: { cards: Card[] }) {
   return (
     <div className="w-full my-24">
       <div className="relative z-10 text-center mb-16">
-        <span className="text-sm font-medium text-sectifyFairyTale/70 mb-4 block tracking-wide uppercase">
+        <span className="text-sm font-medium text-sectifyLightPurple/90 mb-4 block tracking-wide uppercase">
           Component Library
         </span>
         <h2 className="text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-sectifyGreen via-sectifyLightPurple to-sectifyFairyTale mb-6">

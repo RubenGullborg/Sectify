@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${zenDots.variable} antialiased font-zenDots pt-16`}>
+      <body className={`${zenDots.variable} antialiased font-zenDots`}>
         <Header />
 
         <main className="">{children}</main>

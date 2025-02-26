@@ -3,34 +3,39 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 h-16 bg-background border-b border-sectifyEggWhite z-10">
-      <div className="container mx-auto px-4 h-full flex items-center justify-between">
-        <Link
-          href="/"
-          className="text-xl font-bold text-sectifyLightPurple hover:text-sectifyDarkPurple transition-colors"
-        >
-          Sectify
-        </Link>
-        <nav>
-          <ul className="flex gap-4">
-            <li>
-              <Link
-                href="/sections"
-                className="text-sectifyLightPurple hover:text-sectifyDarkPurple transition-colors"
-              >
-                Sections
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/documentation"
-                className="text-sectifyLightPurple hover:text-sectifyDarkPurple transition-colors"
-              >
-                Docs
-              </Link>
-            </li>
-          </ul>
-        </nav>
+    <header className="fixed top-0 left-0 right-0 z-50">
+      <div className="mx-4 my-4">
+        <div className="backdrop-blur-md bg-white/5 border border-white/10 rounded-full px-8 py-4 shadow-lg">
+          <div className="flex items-center justify-between">
+            <Link
+              href="/"
+              className="text-2xl font-bold bg-gradient-to-r from-sectifyGreen via-sectifyGreen to-sectifyLightPurple bg-clip-text text-transparent hover:opacity-90 transition-opacity"
+            >
+              Sectify
+            </Link>
+
+            <nav>
+              <ul className="flex gap-8 items-center">
+                <li>
+                  <Link
+                    href="/sections"
+                    className="text-white/90 hover:text-sectifyGreen transition-colors font-medium"
+                  >
+                    <span>Sections</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/documentation"
+                    className="px-6 py-2 rounded-full bg-gradient-to-r from-sectifyGreen to-sectifyLightPurple text-white hover:opacity-90 transition-all duration-300 hover:scale-105 border border-white/10"
+                  >
+                    Docs
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </div>
     </header>
   );
