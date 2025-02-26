@@ -31,7 +31,7 @@ export default function AboutSection() {
             <div className="flex flex-col gap-4 sm:flex-row">
               <Button
                 size="lg"
-                className="group rounded-xl border-2 border-sectifyGreen bg-sectifyFairyTale text-sectifyGreen hover:bg-sectifyGreen/10 hover:text-white hover:border-sectifyDarkPurple"
+                className="group rounded-xl  bg-sectifyFairyTale text-white hover:bg-sectifyFairyTale hover:text-sectifyGreen hover:border-sectifyGreen"
               >
                 <span className="relative flex items-center gap-2">
                   <Code2 className="h-4 w-4" />
@@ -40,7 +40,7 @@ export default function AboutSection() {
               </Button>
               <Button
                 size="lg"
-                className="group rounded-3xl bg-sectifyLightPurple text-sectifyEggWhite hover:bg-white hover:text-sectifyFairyTale"
+                className="group rounded-3xl bg-sectifyLightPurple text-white hover:bg-white hover:text-sectifyFairyTale"
               >
                 Learn More
                 <span className="ml-2 inline-block transition-transform duration-200 group-hover:translate-x-1">
@@ -69,7 +69,7 @@ export default function AboutSection() {
                 description="No installation needed. Just copy and paste, and you're ready to start building."
                 gradientFrom="white/10"
                 gradientTo="transparent"
-                iconColor="text-sectifyDarkPurple"
+                iconColor="text-sectifyGreen"
               />
               <GlassmorphismCard
                 icon={Layers}
