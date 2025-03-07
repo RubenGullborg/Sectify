@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50">
+    <header className="fixed top-0 left-72 right-72 z-50">
       <div className="mx-4 my-4">
         <div className="backdrop-blur-lg  bg-white/5 border border-white/10 rounded-full px-8 py-4 shadow-lg">
           <div className="flex items-center justify-between">
@@ -19,7 +19,7 @@ const Header = () => {
                 <li>
                   <Link
                     href="/sections"
-                    className="text-white/90 hover:text-sectifyGreen transition-colors font-medium"
+                    className="text-sectifyGreen hover:text-sectifyFairyTale transition-colors font-medium"
                   >
                     <span>Sections</span>
                   </Link>
