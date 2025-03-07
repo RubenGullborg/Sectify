@@ -1,8 +1,9 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { cn } from "@/lib/utils";
 import Link from "next/link"; // Import Link from Next.js
+import { motion, useInView } from "framer-motion";
 
 export const Card = React.memo(
   ({
@@ -60,33 +61,82 @@ type Card = {
 
 export function FocusCards({ cards }: { cards: Card[] }) {
   const [hovered, setHovered] = useState<number | null>(null);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.3,
+        delayChildren: 0.3,
+      },
+    },
+  };
+
+  const cardVariants = {
+    hidden: { 
+      opacity: 0,
+      y: 50 
+    },
+    visible: { 
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1.2,
+        ease: "easeOut"
+      }
+    },
+  };
 
   return (
-    <div className="w-full my-24">
-      <div className="relative z-10 text-center mb-16">
-        <span className="text-sm font-medium text-sectifyLightPurple/90 mb-4 block tracking-wide uppercase">
+    <div className="w-full pb-24">
+      <motion.div
+        ref={ref}
+        initial="hidden"
+        animate={isInView ? "visible" : "hidden"}
+        variants={containerVariants}
+        className="relative z-10 text-center mb-16"
+      >
+        <motion.span 
+          variants={cardVariants}
+          className="text-sm font-medium text-sectifyLightPurple/90 mb-4 block tracking-wide uppercase"
+        >
           Component Library
-        </span>
-        <h2 className="text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-sectifyGreen via-sectifyLightPurple to-sectifyFairyTale mb-6">
+        </motion.span>
+        <motion.h2 
+          variants={cardVariants}
+          className="text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-sectifyGreen via-sectifyLightPurple to-sectifyFairyTale mb-6"
+        >
           Build the Future
-        </h2>
-        <p className="text-xl md:text-2xl text-sectifyEggWhite/80 max-w-3xl mx-auto font-light">
+        </motion.h2>
+        <motion.p 
+          variants={cardVariants}
+          className="text-xl md:text-2xl text-sectifyEggWhite/90 max-w-3xl mx-auto font-light"
+        >
           Discover our collection of modern, interactive components designed for
           your next project
-        </p>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-7xl mx-auto md:px-8 w-full">
+        </motion.p>
+      </motion.div>
+      <motion.div 
+        variants={containerVariants}
+        initial="hidden"
+        animate={isInView ? "visible" : "hidden"}
+        className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-7xl mx-auto md:px-8 w-full"
+      >
         {cards.map((card, index) => (
-          <Card
-            key={card.title}
-            card={card}
-            index={index}
-            hovered={hovered}
-            setHovered={setHovered}
-            href={card.href || "/default-link"}
-          />
+          <motion.div key={card.title} variants={cardVariants}>
+            <Card
+              card={card}
+              index={index}
+              hovered={hovered}
+              setHovered={setHovered}
+              href={card.href || "/default-link"}
+            />
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 }

@@ -22,7 +22,7 @@ const GlassmorphismCard: React.FC<GlassmorphismCardProps> = ({
   return (
     <div className="group relative overflow-hidden rounded-xl bg-white/5 backdrop-blur-lg shadow-xl p-8 transition-all duration-500 hover:bg-white/10 hover:shadow-2xl hover:scale-[1.02] border border-white/10">
       <div
-        className={`absolute inset-0 bg-gradient-to-r from-${gradientFrom} to-${gradientTo} opacity-0 transition-opacity duration-500 group-hover:opacity-100`}
+        className={`absolute inset-0 bg-gradient-to-r from-${gradientFrom} to-${gradientTo} opacity-0 transition-opacity duration-500 group-hover:opacity-100 z-0`}
       />
       <div className="relative flex flex-col gap-6">
         <div

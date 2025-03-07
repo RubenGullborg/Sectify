@@ -78,7 +78,7 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
                   href="/about"
                   className="text-sectifyEggWhite/60 hover:text-sectifyLightPurple transition-colors text-sm"
                 >
-                  About
+                  Philosophy
                 </Link>
               </li>
               <li>
