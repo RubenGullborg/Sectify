@@ -1,20 +1,40 @@
+"use client";
+
 import SubPageLayout from "@/components/Layout/SubPageLayout";
+import { motion } from "framer-motion";
 
 export default function TermsPage() {
+  const fadeIn = {
+    initial: { opacity: 0, y: 20 },
+    animate: { 
+      opacity: 1, 
+      y: 0,
+      transition: {
+        duration: 0.8,
+        ease: "easeOut"
+      }
+    }
+  };
+
   return (
     <SubPageLayout
       title="Terms of Use"
       subtitle="The world's most permissive terms (because we actually want you to use our stuff)"
     >
-      <div className="text-white/90 prose prose-lg prose-invert max-w-none prose-headings:text-sectifyGreen prose-headings:font-semibold prose-a:text-sectifyLightPurple hover:prose-a:text-sectifyGreen prose-strong:text-white prose-img:rounded-xl prose-pre:bg-black/30 prose-pre:backdrop-blur-md">
+      <motion.div 
+        initial="initial"
+        animate="animate"
+        variants={fadeIn}
+        className="text-white/90 prose prose-lg prose-invert max-w-none prose-headings:text-sectifyGreen prose-headings:font-semibold prose-a:text-sectifyLightPurple hover:prose-a:text-sectifyGreen prose-strong:text-white prose-img:rounded-xl prose-pre:bg-black/30 prose-pre:backdrop-blur-md"
+      >
         <h2 className="text-3xl font-bold mt-6">The TL;DR Version</h2>
         <p className="mt-2 mb-4">
           Take our components. Use them. Change them. Sell them. Frame them. We
           don't mind. They're yours now. We just made them.
         </p>
 
-        <div className="my-8 p-6 bg-sectifyGreen/30 rounded-xl">
-          <p className="text-xl italic mb-0">
+        <div className="my-8 p-6">
+          <p className="text-xl italic text-sectifyLightPurple">
             "Good design is meant to be shared, not gate-kept behind legal walls
             thicker than our documentation."
           </p>
@@ -123,7 +143,7 @@ export default function TermsPage() {
             grow and improve together.
           </p>
         </div>
-      </div>
+      </motion.div>
     </SubPageLayout>
   );
 }

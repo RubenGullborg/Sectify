@@ -1,20 +1,40 @@
+"use client";
+
 import SubPageLayout from "@/components/Layout/SubPageLayout";
+import { motion } from "framer-motion";
 
 export default function PrivacyPage() {
+  const fadeIn = {
+    initial: { opacity: 0, y: 20 },
+    animate: { 
+      opacity: 1, 
+      y: 0,
+      transition: {
+        duration: 0.8,
+        ease: "easeOut"
+      }
+    }
+  };
+
   return (
     <SubPageLayout
       title="Privacy Policy"
       subtitle="The world's shortest privacy policy (because we don't collect your data)"
     >
-      <div className="text-white/90 prose prose-lg prose-invert max-w-none prose-headings:text-sectifyGreen prose-headings:font-semibold prose-a:text-sectifyLightPurple hover:prose-a:text-sectifyGreen prose-strong:text-white prose-img:rounded-xl prose-pre:bg-black/30 prose-pre:backdrop-blur-md">
+      <motion.div 
+        initial="initial"
+        animate="animate"
+        variants={fadeIn}
+        className="text-white/90 prose prose-lg prose-invert max-w-none prose-headings:text-sectifyGreen prose-headings:font-semibold prose-a:text-sectifyLightPurple hover:prose-a:text-sectifyGreen prose-strong:text-white prose-img:rounded-xl prose-pre:bg-black/30 prose-pre:backdrop-blur-md"
+      >
         <h2 className="mt-8 mb-4 text-2xl font-bold">The TL;DR Version</h2>
         <p className="mb-6">
           We don't collect your data. We don't store your data. We don't sell your data. 
           We don't even <em>look</em> at your data. In fact, we're not entirely sure what data is.
         </p>
         
-        <div className="my-8 p-6 bg-sectifyGreen/30 rounded-xl">
-          <p className="text-xl italic mb-0">
+        <div className="my-8 p-6">
+          <p className="text-xl italic text-sectifyLightPurple">
             "The best privacy policy is the one where we have nothing to hide because we have nothing of yours to begin with."
           </p>
         </div>
@@ -86,7 +106,7 @@ export default function PrivacyPage() {
             not because regulations forced us to, but because we believe it's the right thing to do.
           </p>
         
-      </div>
+      </motion.div>
     </SubPageLayout>
   );
 }

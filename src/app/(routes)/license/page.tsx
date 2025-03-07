@@ -1,12 +1,32 @@
+"use client";
+
 import SubPageLayout from "@/components/Layout/SubPageLayout";
+import { motion } from "framer-motion";
 
 export default function LicensePage() {
+  const fadeIn = {
+    initial: { opacity: 0, y: 20 },
+    animate: { 
+      opacity: 1, 
+      y: 0,
+      transition: {
+        duration: 0.8,
+        ease: "easeOut"
+      }
+    }
+  };
+
   return (
     <SubPageLayout
       title="License"
       subtitle="The legal bit that lets you sleep at night (and our lawyers too)"
     >
-      <div className="text-white/90 prose prose-lg prose-invert max-w-none prose-headings:text-sectifyGreen prose-headings:font-semibold prose-a:text-sectifyLightPurple hover:prose-a:text-sectifyGreen prose-strong:text-white prose-img:rounded-xl prose-pre:bg-black/30 prose-pre:backdrop-blur-md">
+      <motion.div 
+        initial="initial"
+        animate="animate"
+        variants={fadeIn}
+        className="text-white/90 prose prose-lg prose-invert max-w-none prose-headings:text-sectifyGreen prose-headings:font-semibold prose-a:text-sectifyLightPurple hover:prose-a:text-sectifyGreen prose-strong:text-white prose-img:rounded-xl prose-pre:bg-black/30 prose-pre:backdrop-blur-md"
+      >
         <h2 className="text-4xl font-bold mt-6 mb-4">The TL;DR Version</h2>
         <p>
           MIT License. Take it. Use it. Change it. The components are yours to
@@ -14,9 +34,9 @@ export default function LicensePage() {
           project, even if it's buried in a folder no one will ever open.
         </p>
 
-        <div className="my-8 p-6 bg-sectifyGreen/30 rounded-xl">
-          <p className="text-xl italic mb-0">
-            "We chose the MIT license because it's easier to understand than IKEA instructions and lets you take our components for a joyride"
+        <div className="my-8 p-6 ">
+          <p className="text-xl italic mb-0 text-sectifyLightPurple">
+            "We chose the MIT license because it's as straightforward as a recipe and allows you to take our components and do what you want with them"
           </p>
         </div>
 
@@ -114,7 +134,7 @@ export default function LicensePage() {
             original creators while protecting us from liability.
           </p>
         </div>
-      </div>
+      </motion.div>
     </SubPageLayout>
   );
 }

@@ -1,14 +1,34 @@
+"use client";
+
 import SubPageLayout from "@/components/Layout/SubPageLayout";
+import { motion } from "framer-motion";
 
 export default function CareersPage() {
+  const fadeIn = {
+    initial: { opacity: 0, y: 20 },
+    animate: { 
+      opacity: 1, 
+      y: 0,
+      transition: {
+        duration: 0.8,
+        ease: "easeOut"
+      }
+    }
+  };
+
   return (
     <SubPageLayout
       title="Join the Community"
       subtitle="We're not hiring because we're all builders here"
     >
-      <div className="text-white/90 prose prose-lg prose-invert max-w-none prose-headings:text-sectifyGreen prose-headings:font-semibold prose-a:text-sectifyLightPurple hover:prose-a:text-sectifyGreen">
+      <motion.div 
+        initial="initial"
+        animate="animate"
+        variants={fadeIn}
+        className="text-white/90 prose prose-lg prose-invert max-w-none prose-headings:text-sectifyGreen prose-headings:font-semibold prose-a:text-sectifyLightPurple hover:prose-a:text-sectifyGreen"
+      >
         <div className="my-8 p-6 rounded-xl">
-          <p className="text-xl italic mb-0 text-sectifyGreen">
+          <p className="text-xl italic mb-0 text-sectifyLightPurple">
             "We don't have job openings because Sectify isn't a company – it's a
             canvas for creators, built by the community, for the community."
           </p>
@@ -65,7 +85,7 @@ export default function CareersPage() {
             </a>
           </p>
         </div>
-      </div>
+      </motion.div>
     </SubPageLayout>
   );
 }
