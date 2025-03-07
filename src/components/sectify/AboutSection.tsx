@@ -6,7 +6,7 @@ import GlassmorphismCard from "../ui/glassmorph-card";
 
 export default function AboutSection() {
   return (
-    <section className="relative min-h-screen overflow-hidden py-12 md:py-24 bg-sectifyDark">
+    <section className="relative min-h-screen overflow-hidden py-12 md:py-36 bg-sectifyDark">
       <div className="container relative mx-auto px-4 md:px-6">
         <div className="relative flex flex-col items-center gap-16 md:gap-24">
           {/* Main content - Centered */}

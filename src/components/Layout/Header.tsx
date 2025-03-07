@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
       <div className="mx-4 my-4">
-        <div className="backdrop-blur-md bg-white/5 border border-white/10 rounded-full px-8 py-4 shadow-lg">
+        <div className="backdrop-blur-lg  bg-white/5 border border-white/10 rounded-full px-8 py-4 shadow-lg">
           <div className="flex items-center justify-between">
             <Link
               href="/"
@@ -27,7 +27,7 @@ const Header = () => {
                 <li>
                   <Link
                     href="/documentation"
-                    className="px-6 py-2 rounded-full bg-gradient-to-r from-sectifyGreen to-sectifyLightPurple text-white hover:opacity-90 transition-all duration-300 hover:scale-105 border border-white/10"
+                    className="px-6 py-2 rounded-full bg-gradient-to-r from-sectifyGreen to-sectifyLightPurple text-white hover:opacity-90 transition-all duration-300"
                   >
                     Docs
                   </Link>
