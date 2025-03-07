@@ -1,11 +1,22 @@
+import SubPageLayout from "@/components/Layout/SubPageLayout";
+
 export default function PrivacyPage() {
   return (
-    <div className="container mx-auto px-4 min-h-screen">
-      <h1 className="text-3xl font-bold my-6">Privacy</h1>
-      <div className="prose prose-lg">
-        <h2>Getting Started</h2>
-        <p>Learn how to use Sectify in your projects...</p>
+    <SubPageLayout
+      title="Privacy Policy"
+      subtitle="Learn how we handle and protect your personal information"
+    >
+      <div>
+        <h2 className="text-sectifyGreen">Overview</h2>
+        <p>
+          Your privacy is important to us. This policy outlines how we collect,
+          use, and protect your personal information...
+        </p>
+
+        <h2 className="text-sectifyGreen">Data Collection</h2>
+        <p>Learn how we collect and process your data...</p>
+
       </div>
-    </div>
+    </SubPageLayout>
   );
 }
