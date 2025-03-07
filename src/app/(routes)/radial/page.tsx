@@ -1,4 +1,4 @@
-import { GradientSection } from "@/components/sections/radial/radial-section";
+import { GradientSection } from "@/components/sections/backgrounds/radial/radial-section";
 
 export default function radialPage() {
   return (
