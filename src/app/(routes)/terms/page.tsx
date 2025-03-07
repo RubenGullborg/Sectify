@@ -81,10 +81,12 @@ export default function TermsPage() {
           our code won't occasionally decide to take an unscheduled u-turn.
         </p>
         <p className="mt-2 mb-6">
-          If our components accidentally skywrite your secrets above your ex's
-          house or cause your computer to develop sentience and question your
-          life choices, we apologize in advance, but legally speaking, that's
-          between you and your now-sentient computer.
+          If our dropdown menu suddenly decides to drop up instead, or if our
+          modal component develops separation anxiety and refuses to close, or
+          if our carousel starts displaying images from someone else's vacation
+          in Bali – well, that's the exciting adventure of software development,
+          isn't it? Consider it a surprise feature rather than a bug. Legally
+          speaking, we're as surprised as you are.
         </p>
 
         <h2 className="text-2xl font-bold mt-8 mb-4">Show and Tell</h2>

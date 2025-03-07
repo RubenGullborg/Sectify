@@ -1,6 +1,6 @@
 import { FocusCardsDemo } from "@/components/sectify/HeroSection";
 import AboutSection from "@/components/sectify/AboutSection";
-
+import Philosophy from "@/components/sectify/Philosophy";
 export default function Home() {
   return (
     <>
@@ -26,6 +26,7 @@ export default function Home() {
         <div className="absolute top-0 start-1/2 w-full min-h-full bg-no-repeat bg-top bg-cover z-0 transform -translate-x-1/2 bg-black bg-[url('https://preline.co/assets/svg/examples-dark/squared-bg-element.svg')]"></div>
         <FocusCardsDemo />
       </div>
+      <Philosophy />
 
       {/* <section
         style={{

@@ -53,10 +53,10 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
               </li>
               <li>
                 <Link
-                  href="/components"
+                  href="/sections"
                   className="text-sectifyEggWhite/50 hover:text-sectifyLightPurple transition-colors text-sm"
                 >
-                  Components
+                  Sections
                 </Link>
               </li>
               <li>
