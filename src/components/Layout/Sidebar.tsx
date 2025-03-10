@@ -76,7 +76,7 @@ const Sidebar = ({
 
       {/* Sidebar - skjult på mobil og når kollapseret */}
       <aside
-        className={`fixed left-0 top-0 h-screen flex flex-col bg-black text-gray-200 shadow-xl shadow-blue-gray-900/5 border-sectifyLightPurple border-r-4 pt-20 overflow-y-auto transition-all duration-300 z-40
+        className={`fixed left-0 top-0 h-screen flex flex-col bg-black text-gray-200 shadow-xl shadow-blue-gray-900/5 border-sectifyLightPurple border-r-4 pt-20 overflow-y-auto transition-all duration-300
         ${
           isCollapsed ? "-translate-x-full" : "translate-x-0"
         } w-64 hidden md:flex`}
