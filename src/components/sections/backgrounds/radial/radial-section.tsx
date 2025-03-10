@@ -2,7 +2,6 @@
 
 import type React from "react"
 import { ChevronDown } from "lucide-react"
-import SidebarLayout from "@/components/Layout/SidebarLayout"
 
 interface GradientSectionProps {
   title?: string
@@ -43,7 +42,6 @@ export function GradientSection({
   }
 
   return (
-    <SidebarLayout>
     <section
       className={`relative flex flex-col items-center justify-center w-full overflow-hidden ${fullHeight ? "min-h-screen" : "py-24"} ${className}`}
       style={{
@@ -98,7 +96,6 @@ export function GradientSection({
         }}
       />
     </section>
-    </SidebarLayout>
 
   )
 }

@@ -34,7 +34,7 @@ const roadmapItems: RoadmapItem[] = [
 
 export default function roadmapPage(){
     return (
-      <div className="flex flex-col justify-center items-center min-h-screen bg-gradient-to-b from-black via-sectifyFairyTale/50 to-black">
+      <div className="flex flex-col justify-center items-center min-h-screen bg-gradient-to-b from-black via-sectifyFairyTale/50 to-black py-36">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-sectifyLightPurple/10 via-transparent to-transparent opacity-50" />
         <div className="relative z-10">
           <Roadmap

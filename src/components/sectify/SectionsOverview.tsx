@@ -17,7 +17,7 @@ const sectionCards: SectionCard[] = [
     title: "Hero Section 1",
     image: "/neon.jpeg",
     category: "Hero",
-    path: "/radial",
+    path: "/components/radial",
     description: "Explore the vibrant hero section.",
   },
   {

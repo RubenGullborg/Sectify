@@ -67,7 +67,7 @@ export default function CareersPage() {
               href="/roadmap"
               className="text-sectifyLightPurple hover:text-sectifyFairyTale transition-colors duration-300"
             >
-              roadmap
+              Roadmap
             </a>{" "}
             , our{" "}
             <a

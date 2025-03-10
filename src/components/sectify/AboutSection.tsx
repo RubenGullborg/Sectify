@@ -7,31 +7,31 @@ import { motion } from "framer-motion";
 
 export default function AboutSection() {
   return (
-    <section className="relative min-h-screen overflow-hidden pt-12 md:pt-36 bg-sectifyDark">
+    <section className="relative min-h-screen overflow-hidden pt-12 md:pt-36 bg-sectifyDark pb-36">
       <div className="container relative mx-auto px-4 md:px-6">
         <div className="relative flex flex-col items-center gap-16 md:gap-24">
           {/* Main content - Centered */}
           <div className="flex max-w-5xl flex-col items-center justify-center space-y-8 text-center">
             <div className="space-y-6">
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ 
-                  duration: 0.7, 
-                  ease: [0.22, 1, 0.36, 1]
+                transition={{
+                  duration: 0.7,
+                  ease: [0.22, 1, 0.36, 1],
                 }}
                 className="inline-block rounded-3xl border border-sectifyGreen/20 bg-sectifyFairyTale px-4 py-1.5 text-sm text-white font-medium"
               >
                 About Sectify
               </motion.div>
-              
-              <motion.h2 
+
+              <motion.h2
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ 
-                  duration: 0.7, 
+                transition={{
+                  duration: 0.7,
                   delay: 0.2,
-                  ease: [0.22, 1, 0.36, 1]
+                  ease: [0.22, 1, 0.36, 1],
                 }}
                 className="text-4xl font-bold text-white md:text-5xl lg:text-8xl"
               >
@@ -40,29 +40,29 @@ export default function AboutSection() {
                   Effortless UI
                 </span>
               </motion.h2>
-              
-              <motion.p 
+
+              <motion.p
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ 
-                  duration: 0.7, 
+                transition={{
+                  duration: 0.7,
                   delay: 0.4,
-                  ease: [0.22, 1, 0.36, 1]
+                  ease: [0.22, 1, 0.36, 1],
                 }}
                 className="mx-auto max-w-[600px] text-lg font-thin text-white md:text-xl"
               >
-                Beautiful, responsive components built with React and Tailwind.
-                Designed for developers who value simplicity, speed and
-                flexibility.
+                A community driven component library built with React and Tailwind.
+                Designed with minimal dependencies for 
+                developers who value simplicity, speed, and flexibility.
               </motion.p>
-              
-              <motion.div 
+
+              <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ 
-                  duration: 0.7, 
+                transition={{
+                  duration: 0.7,
                   delay: 0.6,
-                  ease: [0.22, 1, 0.36, 1]
+                  ease: [0.22, 1, 0.36, 1],
                 }}
                 className="flex flex-col sm:flex-row gap-4 justify-center items-center"
               >
@@ -93,26 +93,26 @@ export default function AboutSection() {
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ 
-                duration: 0.7, 
+              transition={{
+                duration: 0.7,
                 delay: 0.8,
-                ease: [0.22, 1, 0.36, 1]
+                ease: [0.22, 1, 0.36, 1],
               }}
             >
               <GlassmorphismCard
                 icon={Layers}
-                title="Modular Design"
-                description="Each component is self-contained and can be used independently."
+                title="Community Driven"
+                description="Contribute your own components and help improve the library."
               />
             </motion.div>
 
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ 
-                duration: 0.7, 
+              transition={{
+                duration: 0.7,
                 delay: 0.9,
-                ease: [0.22, 1, 0.36, 1]
+                ease: [0.22, 1, 0.36, 1],
               }}
             >
               <GlassmorphismCard
@@ -127,10 +127,10 @@ export default function AboutSection() {
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ 
-                duration: 0.7, 
+              transition={{
+                duration: 0.7,
                 delay: 1.0,
-                ease: [0.22, 1, 0.36, 1]
+                ease: [0.22, 1, 0.36, 1],
               }}
             >
               <GlassmorphismCard
@@ -145,10 +145,10 @@ export default function AboutSection() {
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ 
-                duration: 0.7, 
+              transition={{
+                duration: 0.7,
                 delay: 1.1,
-                ease: [0.22, 1, 0.36, 1]
+                ease: [0.22, 1, 0.36, 1],
               }}
             >
               <GlassmorphismCard
