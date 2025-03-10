@@ -64,7 +64,7 @@ const sectionCards: SectionCard[] = [
 
 export default function SectionsOverview() {
   return (
-    <div className="pl-52">
+    <div className="">
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h1 className="text-7xl font-bold pb-4 bg-gradient-to-r from-sectifyGreen to-sectifyLightPurple bg-clip-text text-transparent mb-6">

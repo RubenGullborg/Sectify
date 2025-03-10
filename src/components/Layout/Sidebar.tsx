@@ -1,10 +1,15 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { useEffect } from "react";
 
-const Sidebar = () => {
+const Sidebar = ({
+  toggleSidebar,
+  isCollapsed,
+}: {
+  toggleSidebar: () => void;
+  isCollapsed: boolean;
+}) => {
   const [openCategories, setOpenCategories] = useState({
     sections: false,
     animations: false,
@@ -13,13 +18,15 @@ const Sidebar = () => {
     interactive: false,
   });
 
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  // Fjern den lokale isCollapsed state
+  // const [isCollapsed, setIsCollapsed] = useState(false);
 
   // Automatisk skjul sidebar på mobile enheder
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 768) {
-        setIsCollapsed(true);
+        // setIsCollapsed(true); - Fjern dette
+        toggleSidebar(); // Kald toggleSidebar i stedet
       }
     };
 
@@ -30,17 +37,13 @@ const Sidebar = () => {
     window.addEventListener("resize", handleResize);
 
     return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  }, [toggleSidebar]);
 
   const toggleCategory = (category: keyof typeof openCategories) => {
     setOpenCategories((prev) => ({
       ...prev,
       [category]: !prev[category],
     }));
-  };
-
-  const toggleSidebar = () => {
-    setIsCollapsed(!isCollapsed);
   };
 
   return (
@@ -85,7 +88,7 @@ const Sidebar = () => {
 
           {/* Sections Category */}
           <div className="relative block w-full mt-2">
-            <div className="flex items-center w-full leading-tight rounded-lg outline-none  text-start text-gray-200 hover:bg-gray-700 hover:bg-opacity-80 hover:text-sectifyGreen">
+            <div className="flex items-center w-full leading-tight rounded-lg outline-none text-start text-gray-200 hover:bg-gray-700 hover:bg-opacity-80 hover:text-sectifyGreen">
               <button
                 type="button"
                 onClick={() => toggleCategory("sections")}
