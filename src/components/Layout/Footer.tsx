@@ -45,7 +45,7 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
             <ul className="space-y-3">
               <li>
                 <Link
-                  href="/docs"
+                  href="/documentation"
                   className="text-sectifyEggWhite/50 hover:text-sectifyLightPurple transition-colors text-sm"
                 >
                   Documentation

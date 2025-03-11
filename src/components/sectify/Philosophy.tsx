@@ -140,11 +140,11 @@ export default function Philosophy() {
           transition={{ duration: 0.8, delay: 1.2 }}
           className="text-center mt-20"
         >
-          <p className="text-white/90 text-lg mb-8">
-            Ready to build amazing sections?
+          <p className="text-white/90 text-3xl mb-8">
+            Ready to build sections?
           </p>
           <a
-            href="/docs"
+            href="/documentation"
             className="inline-flex items-center px-8 py-3 rounded-full bg-gradient-to-r from-sectifyFairyTale to-sectifyLightPurple text-white font-medium hover:shadow-lg hover:shadow-sectifyGreen/20 transition-all duration-300 hover:scale-105"
           >
             Get Started →
