@@ -1,5 +1,5 @@
-import { FocusCardsDemo } from "@/components/sectify/HeroSection";
-import AboutSection from "@/components/sectify/AboutSection";
+import { FocusCardsDemo } from "@/components/sectify/landing/HeroSection";
+import AboutSection from "@/components/sectify/landing/AboutSection";
 export default function Home() {
   return (
     <>

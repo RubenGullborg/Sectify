@@ -1,5 +1,5 @@
 import React from "react";
-import SectionsOverview from "@/components/sectify/SectionsOverview";
+import SectionsOverview from "@/components/sectify/sections_all/SectionsOverview";
 import SidebarLayout from "@/components/Layout/SidebarLayout";
 
 export default function SectionsPage() {

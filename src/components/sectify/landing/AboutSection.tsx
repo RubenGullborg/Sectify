@@ -2,7 +2,7 @@
 
 import { Code2, Copy, Layers, PackageOpen } from "lucide-react";
 import { Button } from "@/components/ui/shadcn/button";
-import GlassmorphismCard from "../ui/glassmorph-card";
+import GlassmorphismCard from "../../ui/glassmorph-card";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
