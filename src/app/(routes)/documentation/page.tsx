@@ -1,11 +1,37 @@
+import GettingStarted from '@/components/documentation/GettingStarted';
+import Installation from '@/components/documentation/Installation';
+import BasicUsage from '@/components/documentation/BasicUsage';
+import AdvancedFeatures from '@/components/documentation/AdvancedFeatures';
+
 export default function DocumentationPage() {
-    return (
-      <div className="container mx-auto px-4 min-h-screen">
-        <h1 className="text-3xl font-bold my-6">Documentation</h1>
-        <div className="prose prose-lg">
-          <h2>Getting Started</h2>
-          <p>Learn how to use Sectify in your projects...</p>
+  return (
+    <div className="container min-h-screen pt-24">
+      
+      
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        {/* Sidebar Navigation */}
+        <div className="md:col-span-1 bg-gray-50 p-6 rounded-lg shadow-sm sticky top-24 h-fit">
+          
+          <h3 className="text-xl font-semibold mb-4">Contents</h3>
+          <nav className="space-y-2">
+            <a href="#getting-started" className="block py-1 px-2 hover:bg-gray-200 rounded transition">Getting Started</a>
+            <a href="#installation" className="block py-1 px-2 hover:bg-gray-200 rounded transition">Installation</a>
+            <a href="#basic-usage" className="block py-1 px-2 hover:bg-gray-200 rounded transition">Basic Usage</a>
+            <a href="#advanced" className="block py-1 px-2 hover:bg-gray-200 rounded transition">Advanced Features</a>
+            <a href="#api-reference" className="block py-1 px-2 hover:bg-gray-200 rounded transition">API Reference</a>
+            <a href="#examples" className="block py-1 px-2 hover:bg-gray-200 rounded transition">Examples</a>
+          </nav>
+        </div>
+        
+        {/* Main Content */}
+        
+        <div className="md:col-span-3 prose prose-lg max-w-none">
+          <GettingStarted />
+          <Installation />
+          <BasicUsage />
+          <AdvancedFeatures />
         </div>
       </div>
-    );
-  }
+    </div>
+  );
+}
