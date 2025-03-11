@@ -33,8 +33,7 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
               </h3>
             </Link>
             <p className="text-sectifyEggWhite/60 text-sm">
-              Modern UI components for your next React project. Built with
-              performance and accessibility in mind.
+              Community-driven UI component library for your next React project. Each section designed to be simple and intuitive.
             </p>
           </div>
 
@@ -67,12 +66,30 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
                   Roadmap
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/changelog"
+                  className="text-sectifyEggWhite/50 hover:text-sectifyLightPurple transition-colors text-sm"
+                >
+                  Changelog
+                </Link>
+              </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-sectifyEggWhite font-medium mb-4">Company</h4>
+            <h4 className="text-sectifyEggWhite text-lg font-semibold mb-4">
+              Sectify
+            </h4>
             <ul className="space-y-3">
+              <li>
+                <Link
+                  href="/"
+                  className="text-sectifyEggWhite/60 hover:text-sectifyLightPurple transition-colors text-sm"
+                >
+                  Hall of Fame
+                </Link>
+              </li>
               <li>
                 <Link
                   href="/about"
@@ -83,25 +100,27 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
               </li>
               <li>
                 <Link
+                  href="/careers"
+                  className="text-sectifyEggWhite/60 hover:text-sectifyLightPurple transition-colors text-sm"
+                >
+                  Carreers
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/blog"
                   className="text-sectifyEggWhite/60 hover:text-sectifyLightPurple transition-colors text-sm"
                 >
                   Blog
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/careers"
-                  className="text-sectifyEggWhite/60 hover:text-sectifyLightPurple transition-colors text-sm"
-                >
-                  Careers
-                </Link>
-              </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-sectifyEggWhite font-medium mb-4">Legal</h4>
+            <h4 className="text-sectifyEggWhite text-lg font-semibold mb-4">
+              Legal
+            </h4>
             <ul className="space-y-3">
               <li>
                 <Link
