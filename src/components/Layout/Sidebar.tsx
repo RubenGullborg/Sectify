@@ -51,7 +51,7 @@ const Sidebar = ({
       {/* Toggle knap - altid synlig */}
       <button
         onClick={toggleSidebar}
-        className="fixed top-4 left-4 z-50 p-2 rounded-lg bg-gray-800 text-sectifyGreen hover:bg-gray-700 transition-colors"
+        className="fixed top-4 left-4 z-50 p-3 rounded-3xl bg-gray-800/80 backdrop-blur-lg text-sectifyGreen hover:bg-gray-700/80 border border-gray-700/50 hover:border-sectifyGreen/50 shadow-lg hover:shadow-sectifyGreen/20 transition-all duration-300"
         aria-label={isCollapsed ? "Åbn sidebar" : "Luk sidebar"}
       >
         <svg
@@ -60,7 +60,7 @@ const Sidebar = ({
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-6 h-6"
+          className="w-5 h-5 transition-transform duration-300"
         >
           <path
             strokeLinecap="round"

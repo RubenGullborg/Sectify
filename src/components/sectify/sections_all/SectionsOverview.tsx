@@ -23,7 +23,7 @@ const sectionCards: SectionCard[] = [
   {
     id: "feature-1",
     title: "Feature Grid",
-    image: "/images/sections/feature-1.jpg",
+    image: "/strong.png",
     category: "Features",
     path: "/sections/features/feature-1",
     description: "View the feature grid section.",
@@ -31,7 +31,7 @@ const sectionCards: SectionCard[] = [
   {
     id: "cta-1",
     title: "Call to Action",
-    image: "/images/sections/cta-1.jpg",
+    image: "/waveink.png",
     category: "CTA",
     path: "/sections/cta/cta-1",
     description: "View the call to action section.",
@@ -39,7 +39,7 @@ const sectionCards: SectionCard[] = [
   {
     id: "testimonial-1",
     title: "Testimonial Slider",
-    image: "/images/sections/testimonial-1.jpg",
+    image: "/abstract-black.png",
     category: "Testimonials",
     path: "/sections/testimonials/testimonial-1",
     description: "View the testimonial slider section.",
@@ -47,7 +47,7 @@ const sectionCards: SectionCard[] = [
   {
     id: "hero-2",
     title: "Hero Section 2",
-    image: "/images/sections/hero-2.jpg",
+    image: "/waveink.png",
     category: "Hero",
     path: "/sections/hero/hero-2",
     description: "View the second hero section.",
@@ -55,7 +55,7 @@ const sectionCards: SectionCard[] = [
   {
     id: "feature-2",
     title: "Feature List",
-    image: "/images/sections/feature-2.jpg",
+    image: "/neon.jpeg",
     category: "Features",
     path: "/sections/features/feature-2",
     description: "View the feature list section.",
@@ -78,15 +78,15 @@ export default function SectionsOverview() {
           </p>
         </div>
 
-        <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
+        <div className="columns-1 sm:columns-2 lg:columns-2 gap-4 space-y-4">
           {sectionCards.map((card) => (
             <Link
               href={card.path}
               key={card.id}
               className="block mb-4 break-inside-avoid"
             >
-              <div className="group bg-gray-800/80 backdrop-blur-lg rounded-xl overflow-hidden border border-gray-700/50 hover:border-sectifyGreen/50 shadow-lg hover:shadow-sectifyGreen/20 transition-all duration-300">
-                <div className="relative h-64 w-full overflow-hidden">
+              <div className="group bg-white rounded-2xl overflow-hidden border-2 border-black shadow-lg hover:shadow-xl transition-all duration-300">
+                <div className="relative h-72 w-full overflow-hidden">
                   <Image
                     src={card.image}
                     alt={card.title}
@@ -98,15 +98,15 @@ export default function SectionsOverview() {
                     {card.category}
                   </div>
                 </div>
-                <div className="p-5">
-                  <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-sectifyGreen transition-colors">
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold text-black mb-3 group-hover:text-sectifyGreen transition-colors duration-300">
                     {card.title}
                   </h3>
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-400 text-sm font-medium group-hover:text-sectifyGreen/80 transition-colors">
+                    <span className="text-gray-600 text-sm font-medium group-hover:text-sectifyGreen transition-colors duration-300">
                       {card.description}
                     </span>
-                    <div className="h-8 w-8 rounded-full bg-gray-700/50 group-hover:bg-sectifyGreen/20 flex items-center justify-center transition-all duration-300">
+                    <div className="h-10 w-10 rounded-full border-2 border-black flex items-center justify-center transition-all duration-300 group-hover:bg-black group-hover:text-white">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"

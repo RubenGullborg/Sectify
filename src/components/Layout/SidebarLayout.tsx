@@ -4,7 +4,7 @@ import React, { useState, useCallback } from "react";
 import Sidebar from "../Layout/Sidebar";
 
 const SidebarLayout = ({ children }: { children: React.ReactNode }) => {
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  const [isCollapsed, setIsCollapsed] = useState(true);
 
   // Brug useCallback for at undgå unødvendige re-renders
   const toggleSidebar = useCallback(() => {

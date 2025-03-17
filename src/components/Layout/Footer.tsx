@@ -66,14 +66,6 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
                   Roadmap
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/changelog"
-                  className="text-sectifyEggWhite/50 hover:text-sectifyLightPurple transition-colors text-sm"
-                >
-                  Changelog
-                </Link>
-              </li>
             </ul>
           </div>
 
