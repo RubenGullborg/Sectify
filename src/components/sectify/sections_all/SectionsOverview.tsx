@@ -67,10 +67,10 @@ export default function SectionsOverview() {
     <div className="">
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h1 className="text-7xl font-bold pb-4 bg-gradient-to-r from-sectifyGreen to-sectifyLightPurple bg-clip-text text-transparent mb-6">
-            Discover Our Component Library
+          <h1 className="text-7xl font-bold pb-4 bg-gradient-to-r from-sectifyGreen via-sectifyLightPurple to-sectifyFairyTale bg-clip-text text-transparent mb-6">
+            Discover our Component Library
           </h1>
-          <p className="text-lg text-gray-400 leading-relaxed">
+          <p className="text-lg text-sectifyEggWhite/80 leading-relaxed">
             Discover elegant, responsive, and highly customizable UI components
             that seamlessly integrate into your projects. Each component is
             crafted with as few dependencies as possible, so you can copy +
@@ -85,7 +85,7 @@ export default function SectionsOverview() {
               key={card.id}
               className="block mb-4 break-inside-avoid"
             >
-              <div className="group bg-white rounded-2xl overflow-hidden border-2 border-black shadow-lg hover:shadow-xl transition-all duration-300">
+              <div className="group bg-white rounded-2xl overflow-hidden border-4 border-sectifyLightPurple shadow-lg hover:shadow-xl transition-all duration-300">
                 <div className="relative h-72 w-full overflow-hidden">
                   <Image
                     src={card.image}
@@ -99,19 +99,19 @@ export default function SectionsOverview() {
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold text-black mb-3 group-hover:text-sectifyGreen transition-colors duration-300">
+                  <h3 className="text-xl font-semibold text-black mb-3 group-hover:text-sectifyFairyTale transition-colors duration-300">
                     {card.title}
                   </h3>
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-600 text-sm font-medium group-hover:text-sectifyGreen transition-colors duration-300">
+                    <span className="text-gray-600 text-sm font-medium group-hover:text-sectifyDarkPurple transition-colors duration-300">
                       {card.description}
                     </span>
-                    <div className="h-10 w-10 rounded-full border-2 border-black flex items-center justify-center transition-all duration-300 group-hover:bg-black group-hover:text-white">
+                    <div className="h-10 w-10 rounded-full border-2 border-sectifyLightPurple flex items-center justify-center transition-all duration-300 group-hover:bg-sectifyFairyTale group-hover:border-sectifyFairyTale group-hover:text-white">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        className="w-4 h-4 text-sectifyGreen"
+                        className="w-5 h-5 text-sectifyGreen"
                       >
                         <path
                           fillRule="evenodd"
