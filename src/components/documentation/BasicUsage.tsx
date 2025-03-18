@@ -1,6 +1,6 @@
 export default function BasicUsage() {
   return (
-    <section id="basic-usage" className="mb-12">
+    <section id="basic-usage" className="mb-12 scroll-mt-24">
       <h2 className="text-2xl font-bold mb-4">Basic Usage</h2>
       <p>
         Sectify is designed to be intuitive and easy to use. Here's a simple example:
