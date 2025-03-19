@@ -1,22 +1,24 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-export default function CommunityPage() {
-  const fadeIn = {
-    initial: { opacity: 0, y: 20 },
-    animate: { 
-      opacity: 1, 
-      y: 0,
-      transition: {
-        duration: 0.8,
-        ease: "easeOut"
-      }
+// Component specific animations
+const fadeIn = {
+  initial: { opacity: 0, y: 20 },
+  animate: { 
+    opacity: 1, 
+    y: 0,
+    transition: {
+      duration: 0.8,
+      ease: "easeOut"
     }
-  };
+  }
+};
 
+// The actual Community component that can be copied
+const CommunitySection = () => {
   return (
     <div className="relative min-h-screen bg-black">
       {/* Gradient Background */}
@@ -172,6 +174,89 @@ export default function CommunityPage() {
             </Link>
           </div>
         </motion.div>
+      </div>
+    </div>
+  );
+};
+
+// Component showcase page with description, preview and code
+export default function CommunityPage() {
+  const [showCode, setShowCode] = useState(false);
+  
+  return (
+    <div className="min-h-screen bg-gray-950">
+      {/* Component Description */}
+      <div className="container mx-auto px-4 py-16">
+        <h1 className="text-4xl font-bold text-white mb-6">Community Section Component</h1>
+        
+        <div className="prose prose-invert max-w-none mb-12">
+          <h2 className="text-2xl font-semibold mb-4">About this Component</h2>
+          <p className="text-gray-300 leading-relaxed">
+            The Community Section is a full-page component designed to showcase community engagement and participation.
+            It features a modern, gradient-based design with animated orbs, interactive cards, and clear call-to-actions.
+          </p>
+          
+          <h3 className="text-xl font-semibold mt-8 mb-4">Key Features</h3>
+          <ul className="list-disc list-inside text-gray-300 space-y-2">
+            <li>Animated gradient background with floating orbs</li>
+            <li>Dot pattern overlay with fade effects</li>
+            <li>Responsive grid layout for feature cards</li>
+            <li>Interactive hover states and transitions</li>
+            <li>Optimized for accessibility and performance</li>
+          </ul>
+
+          <h3 className="text-xl font-semibold mt-8 mb-4">Usage Requirements</h3>
+          <ul className="list-disc list-inside text-gray-300 space-y-2">
+            <li>Next.js 13+ with App Router</li>
+            <li>Tailwind CSS</li>
+            <li>Framer Motion for animations</li>
+          </ul>
+        </div>
+
+        {/* Preview/Code Toggle */}
+        <div className="flex items-center justify-end gap-4 mb-8">
+          <button
+            onClick={() => setShowCode(false)}
+            className={`px-4 py-2 rounded-lg transition-all ${
+              !showCode ? 'bg-sectifyGreen text-black' : 'text-sectifyGreen'
+            }`}
+          >
+            Preview
+          </button>
+          <button
+            onClick={() => setShowCode(true)}
+            className={`px-4 py-2 rounded-lg transition-all ${
+              showCode ? 'bg-sectifyGreen text-black' : 'text-sectifyGreen'
+            }`}
+          >
+            Code
+          </button>
+        </div>
+
+        {/* Component Preview/Code */}
+        <div className="relative rounded-xl overflow-hidden border border-white/10">
+          {showCode ? (
+            <pre className="p-4 bg-gray-900 overflow-x-auto">
+              <code className="text-sm text-gray-300">
+                {`// Copy this code to use the component
+import { motion } from 'framer-motion';
+
+export const CommunitySection = () => {
+  // Component code here...
+  // Full code available in the GitHub repository
+}`}
+              </code>
+            </pre>
+          ) : (
+            <div className="w-full aspect-[16/9] bg-black">
+              <iframe
+                className="w-full h-full"
+                src="/preview/community-section"
+                title="Community Section Preview"
+              />
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
