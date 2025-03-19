@@ -61,7 +61,7 @@ export default function CommunityPage() {
             Sectify Community
           </h1>
           <p className="text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
-            Bygget af fællesskabet, for fællesskabet. Deltag i udviklingen af den næste generation af web-sektioner.
+            Built by the community, for the community. Join in developing the next generation of web sections.
           </p>
         </motion.div>
 
@@ -72,17 +72,17 @@ export default function CommunityPage() {
           variants={fadeIn}
           className="backdrop-blur-xl bg-white/[0.03] border border-white/10 rounded-2xl p-8 mb-16 hover:bg-white/[0.05] transition-all duration-300"
         >
-          <h2 className="text-2xl font-semibold text-white mb-4">Vores Vision</h2>
+          <h2 className="text-2xl font-semibold text-white mb-4">Our Vision</h2>
           <p className="text-white/70 leading-relaxed mb-6">
-            Sectify er bygget på troen om, at de bedste løsninger kommer fra et aktivt og engageret fællesskab. 
-            Vi stræber efter at skabe et inklusivt miljø, hvor udviklere kan dele deres viden, bidrage med kode, 
-            og hjælpe hinanden med at bygge bedre web-applikationer.
+            Sectify is built on the belief that the best solutions come from an active and engaged community. 
+            We strive to create an inclusive environment where developers can share their knowledge, contribute code, 
+            and help each other build better web applications.
           </p>
           <Link 
             href="/community/contribute"
             className="inline-flex items-center px-8 py-3 rounded-full bg-gradient-to-r from-sectifyFairyTale to-sectifyLightPurple text-white font-medium hover:shadow-lg hover:shadow-sectifyGreen/20 transition-all duration-300 hover:scale-105"
           >
-            Bydrag til Projektet →
+            Contribute to the Project →
           </Link>
         </motion.div>
 
@@ -99,13 +99,13 @@ export default function CommunityPage() {
             <div className="relative z-10">
               <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-sectifyGreen transition-colors">Hall of Fame</h3>
               <p className="text-white/70 leading-relaxed mb-4">
-                Se de mest værdifulde bidragydere til Sectify's udvikling.
+                See the most valuable contributors to Sectify's development.
               </p>
               <Link 
                 href="/community/hall-of-fame"
                 className="text-sectifyGreen hover:text-sectifyFairyTale transition-colors inline-flex items-center"
               >
-                Se Hall of Fame →
+                View Hall of Fame →
               </Link>
             </div>
           </div>
@@ -114,9 +114,9 @@ export default function CommunityPage() {
           <div className="group relative backdrop-blur-xl bg-white/[0.03] rounded-2xl border border-white/10 p-8 hover:bg-white/[0.05] transition-all duration-300">
             <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-sectifyGreen/20 to-sectifyLightPurple/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             <div className="relative z-10">
-              <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-sectifyGreen transition-colors">Discord Fællesskab</h3>
+              <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-sectifyGreen transition-colors">Discord Community</h3>
               <p className="text-white/70 leading-relaxed mb-4">
-                Join vores Discord server for live diskussioner og support.
+                Join our Discord server for live discussions and support.
               </p>
               <Link 
                 href="/community/discord"
@@ -131,15 +131,15 @@ export default function CommunityPage() {
           <div className="group relative backdrop-blur-xl bg-white/[0.03] rounded-2xl border border-white/10 p-8 hover:bg-white/[0.05] transition-all duration-300">
             <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-sectifyGreen/20 to-sectifyLightPurple/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             <div className="relative z-10">
-              <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-sectifyGreen transition-colors">Bidrag Guide</h3>
+              <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-sectifyGreen transition-colors">Contribution Guide</h3>
               <p className="text-white/70 leading-relaxed mb-4">
-                Lær hvordan du kan bidrage til Sectify's udvikling.
+                Learn how you can contribute to Sectify's development.
               </p>
               <Link 
                 href="/community/contribute"
                 className="text-sectifyGreen hover:text-sectifyFairyTale transition-colors inline-flex items-center"
               >
-                Læs Guide →
+                Read Guide →
               </Link>
             </div>
           </div>
@@ -152,17 +152,17 @@ export default function CommunityPage() {
           variants={fadeIn}
           className="text-center backdrop-blur-xl bg-white/[0.03] border border-white/10 rounded-2xl p-8 mb-16"
         >
-          <h2 className="text-2xl font-semibold text-white mb-4">Klar til at deltage?</h2>
+          <h2 className="text-2xl font-semibold text-white mb-4">Ready to Participate?</h2>
           <p className="text-white/70 leading-relaxed mb-6 max-w-2xl mx-auto">
-            Sectify er et open source projekt, og vi elsker nye bidragydere! Uanset om du er en erfaren udvikler eller lige er begyndt, 
-            er der altid plads til dig i vores fællesskab.
+            Sectify is an open source project, and we love new contributors! Whether you're an experienced developer or just getting started, 
+            there's always a place for you in our community.
           </p>
           <div className="flex gap-4 justify-center">
             <Link 
               href="/community/contribute"
               className="inline-flex items-center px-8 py-3 rounded-full bg-gradient-to-r from-sectifyFairyTale to-sectifyLightPurple text-white font-medium hover:shadow-lg hover:shadow-sectifyGreen/20 transition-all duration-300 hover:scale-105"
             >
-              Bydrag til Koden →
+              Contribute to Code →
             </Link>
             <Link 
               href="/community/discord"
