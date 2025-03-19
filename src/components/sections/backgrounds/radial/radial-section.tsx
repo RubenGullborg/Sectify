@@ -1,7 +1,6 @@
 "use client"
 
 import type React from "react"
-import { ChevronDown } from "lucide-react"
 
 interface GradientSectionProps {
   title?: string
@@ -78,7 +77,19 @@ export function GradientSection({
             </div>
 
             <div className="mt-12 animate-bounce cursor-pointer" onClick={scrollToContent}>
-              <ChevronDown className="h-8 w-8 text-white/70" />
+              <svg
+                className="h-8 w-8 text-white/70"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 14l-7 7m0 0l-7-7m7 7V3"
+                />
+              </svg>
             </div>
           </div>
         )}
@@ -96,7 +107,6 @@ export function GradientSection({
         }}
       />
     </section>
-
   )
 }
 
