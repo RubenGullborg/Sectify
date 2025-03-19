@@ -85,7 +85,7 @@ export default function SectionsOverview() {
               key={card.id}
               className="block mb-4 break-inside-avoid"
             >
-              <div className="group bg-white rounded-2xl overflow-hidden border-4 border-sectifyLightPurple shadow-lg hover:shadow-xl transition-all duration-300">
+              <div className="group bg-white rounded-2xl overflow-hidden border-2 border-sectifyLightPurple shadow-lg hover:shadow-xl transition-all duration-300">
                 <div className="relative h-72 w-full overflow-hidden">
                   <Image
                     src={card.image}
