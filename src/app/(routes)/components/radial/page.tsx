@@ -86,17 +86,17 @@ export default function RadialPage() {
             </button>
           </div>
           <div className="p-6">
-            <GradientSection
-              title="Another Style Variation"
-              subtitle="Explore different color combinations for your sections"
-              primaryColor="#000428"
-              secondaryColor="#004e92"
-              tertiaryColor="#000000"
-              overlayOpacity={0.7}
-              primaryButtonText="Get Access"
-              secondaryButtonText="Read Docs"
-              className="border-t border-white/10"
-            />
+      <GradientSection
+        title="Another Style Variation"
+        subtitle="Explore different color combinations for your sections"
+        primaryColor="#000428"
+        secondaryColor="#004e92"
+        tertiaryColor="#000000"
+        overlayOpacity={0.7}
+        primaryButtonText="Get Access"
+        secondaryButtonText="Read Docs"
+        className="border-t border-white/10"
+      />
           </div>
           <div className="border-t px-6 py-4 bg-gray-50">
             <button
@@ -113,20 +113,20 @@ export default function RadialPage() {
             </button>
             {showCode && (
               <pre className="mt-4 p-4 bg-gray-900 text-gray-100 rounded overflow-x-auto">
-                <code>
-                  {`<GradientSection
-  title="Another Style Variation"
-  subtitle="Explore different color combinations for your sections"
-  primaryColor="#000428"
-  secondaryColor="#004e92"
-  tertiaryColor="#000000"
-  overlayOpacity={0.7}
-  primaryButtonText="Get Access"
-  secondaryButtonText="Read Docs"
-  className="border-t border-white/10"
+        <code>
+          {`<GradientSection
+    title="Another Style Variation"
+    subtitle="Explore different color combinations for your sections"
+    primaryColor="#000428"
+    secondaryColor="#004e92"
+    tertiaryColor="#000000"
+    overlayOpacity={0.7}
+    primaryButtonText="Get Access"
+    secondaryButtonText="Read Docs"
+    className="border-t border-white/10"
 />`}
-                </code>
-              </pre>
+        </code>
+      </pre>
             )}
           </div>
         </div>
@@ -137,7 +137,7 @@ export default function RadialPage() {
             <h3 className="font-medium">Purple Variant</h3>
           </div>
           <div className="p-6">
-            <GradientSection
+      <GradientSection
               title="Purple Gradient Variation"
               subtitle="This variant uses a purple color scheme for a more vibrant look"
               primaryColor="#4A00E0"
@@ -146,7 +146,7 @@ export default function RadialPage() {
               overlayOpacity={0.65}
               primaryButtonText="Learn More"
               secondaryButtonText="Documentation"
-              className="border-t border-white/10"
+        className="border-t border-white/10"
             />
           </div>
         </div>

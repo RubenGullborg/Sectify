@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import { GradientSection } from "@/components/sections/backgrounds/radial/radial-section";
+import BackgroundPaths from "@/components/sections/backgrounds/backgroundBeams/beam-section";
+import { motion } from "framer-motion";
 
 interface SectionCard {
   id: string;
@@ -14,10 +16,10 @@ interface SectionCard {
 const sectionCards: SectionCard[] = [
   {
     id: "hero-1",
-    title: "Hero Section 1",
-    category: "Hero",
+    title: "Radial Dark Sun",
+    category: "Background",
     path: "/components/radial",
-    description: "Explore the vibrant hero section.",
+    description: "Explore the vibrant hero section of moon and sun in all colors.",
     component: (
       <GradientSection
         title="Another Style Variation"
@@ -33,40 +35,24 @@ const sectionCards: SectionCard[] = [
     ),
   },
   {
-    id: "feature-1",
-    title: "Feature Grid",
-    category: "Features",
-    path: "/sections/features/feature-1",
-    description: "View the feature grid section.",
-  },
-  {
-    id: "cta-1",
-    title: "Call to Action",
-    category: "CTA",
-    path: "/sections/cta/cta-1",
-    description: "View the call to action section.",
-  },
-  {
-    id: "testimonial-1",
-    title: "Testimonial Slider",
-    category: "Testimonials",
-    path: "/sections/testimonials/testimonial-1",
-    description: "View the testimonial slider section.",
-  },
-  {
     id: "hero-2",
-    title: "Hero Section 2",
-    category: "Hero",
-    path: "/sections/hero/hero-2",
-    description: "View the second hero section.",
+    title: "Background Beams",
+    category: "Background",
+    path: "/components/backgroundBeams",
+    description: "An interactive component featuring animated background beams with customizable colors and animations.",
+    component: (
+      <BackgroundPaths
+        title="Dynamic Background"
+        buttonText="Explore More"
+        titleGradientClass="bg-gradient-to-r from-sectifyGreen to-sectifyLightPurple"
+        pathCount={10}
+        pathOpacity={0.2}
+        animationSpeed={0.5}
+      />
+    ),
   },
-  {
-    id: "feature-2",
-    title: "Feature List",
-    category: "Features",
-    path: "/sections/features/feature-2",
-    description: "View the feature list section.",
-  },
+
+ 
 ];
 
 export default function SectionsOverview() {

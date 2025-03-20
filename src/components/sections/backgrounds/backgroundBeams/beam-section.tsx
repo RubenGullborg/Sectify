@@ -49,30 +49,40 @@ function FloatingPaths({
   config: PathConfig;
   reduceMotion?: boolean;
 }) {
-  // Generate fewer, more varied paths
+  // Generate deterministic paths with rounded numbers
   const paths = Array.from({ length: config.count }, (_, i) => {
-    // Create more variation in the path shapes
-    const variance = Math.sin(i * 0.5) * 100;
-    const heightOffset = Math.cos(i * 0.7) * 150;
-    const widthScale = 0.8 + Math.sin(i * 0.3) * 0.4;
+    // Use simpler, rounded calculations
+    const variance = Math.round(Math.sin(i * 0.5) * 100);
+    const heightOffset = Math.round(Math.cos(i * 0.7) * 150);
+    const widthScale = 0.8 + (i % 3) * 0.1;
+    const duration = config.animationDuration * (0.7 + (i % 3) * 0.2);
+    const delay = i * 0.2;
+    const direction = i % 2 === 0 ? 1 : -1;
+
+    // Simplified path with rounded numbers
+    const startX = -380 - variance * position;
+    const startY = -189 + heightOffset;
+    const control1X = -350 - variance * position;
+    const control1Y = -150 + heightOffset;
+    const control2X = -200 - variance * position * widthScale;
+    const control2Y = 100 + heightOffset;
+    const control3X = 100 - variance * position * widthScale;
+    const control3Y = 200 + heightOffset;
+    const control4X = 400 - variance * position * 0.5;
+    const control4Y = 300 + heightOffset;
+    const control5X = 600 - variance * position * 0.3;
+    const control5Y = 400 + heightOffset;
+    const endX = 700 - variance * position * 0.2;
+    const endY = 450 + heightOffset;
 
     return {
       id: i,
-      d: `M${-380 - variance * position} ${-189 + heightOffset}C${
-        -350 - variance * position
-      } ${-150 + heightOffset} ${-200 - variance * position * widthScale} ${
-        100 + heightOffset
-      } ${100 - variance * position * widthScale} ${200 + heightOffset}C${
-        400 - variance * position * 0.5
-      } ${300 + heightOffset} ${600 - variance * position * 0.3} ${
-        400 + heightOffset
-      } ${700 - variance * position * 0.2} ${450 + heightOffset}`,
+      d: `M${startX} ${startY}C${control1X} ${control1Y} ${control2X} ${control2Y} ${control3X} ${control3Y}C${control4X} ${control4Y} ${control5X} ${control5Y} ${endX} ${endY}`,
       color: `rgba(15,23,42,${config.opacity + i * 0.05})`,
       width: config.width + i * 0.08,
-      // Randomize animation properties for each path
-      duration: config.animationDuration * (0.7 + Math.random() * 0.6),
-      delay: i * 0.2 * Math.random(),
-      direction: Math.random() > 0.5 ? 1 : -1,
+      duration,
+      delay,
+      direction,
     };
   });
 
@@ -95,7 +105,7 @@ function FloatingPaths({
             initial={{
               pathLength: reduceMotion ? 1 : 0.1,
               opacity: 0.3,
-              scale: 0.95 + Math.random() * 0.1,
+              scale: 0.95 + (path.id % 3) * 0.05,
             }}
             animate={
               reduceMotion

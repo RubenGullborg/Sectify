@@ -33,7 +33,8 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
               </h3>
             </Link>
             <p className="text-sectifyEggWhite/60 text-sm">
-              Community-driven UI component library for your next React project. Each section designed to be simple and intuitive.
+              Community-driven UI component library for your next React project.
+              Each section designed to be simple and intuitive.
             </p>
           </div>
 
@@ -74,14 +75,6 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
               Sectify
             </h4>
             <ul className="space-y-3">
-              <li>
-                <Link
-                  href="/"
-                  className="text-sectifyEggWhite/60 hover:text-sectifyLightPurple transition-colors text-sm"
-                >
-                  Hall of Fame
-                </Link>
-              </li>
               <li>
                 <Link
                   href="/about"
@@ -149,7 +142,7 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
 
           <div className="flex items-center gap-6 mt-4 md:mt-0">
             <a
-              href="https://twitter.com"
+              href="https://x.com/RubenGullborg"
               className="text-sectifyEggWhite/60 hover:text-sectifyLightPurple transition-colors"
             >
               <svg
@@ -162,7 +155,7 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
               </svg>
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/RubenGullborg"
               className="text-sectifyEggWhite/60 hover:text-sectifyLightPurple transition-colors"
             >
               <svg
