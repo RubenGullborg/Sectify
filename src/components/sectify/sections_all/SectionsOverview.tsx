@@ -1,29 +1,40 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
+import { GradientSection } from "@/components/sections/backgrounds/radial/radial-section";
 
 interface SectionCard {
   id: string;
   title: string;
-  image: string;
   category: string;
   path: string;
   description: string;
+  component?: React.ReactNode;
 }
 
 const sectionCards: SectionCard[] = [
   {
     id: "hero-1",
     title: "Hero Section 1",
-    image: "/neon.jpeg",
     category: "Hero",
     path: "/components/radial",
     description: "Explore the vibrant hero section.",
+    component: (
+      <GradientSection
+        title="Another Style Variation"
+        subtitle="Explore different color combinations for your sections"
+        primaryColor="#000428"
+        secondaryColor="#004e92"
+        tertiaryColor="#000000"
+        overlayOpacity={0.7}
+        primaryButtonText="Get Access"
+        secondaryButtonText="Read Docs"
+        className="border-t border-white/10"
+      />
+    ),
   },
   {
     id: "feature-1",
     title: "Feature Grid",
-    image: "/strong.png",
     category: "Features",
     path: "/sections/features/feature-1",
     description: "View the feature grid section.",
@@ -31,7 +42,6 @@ const sectionCards: SectionCard[] = [
   {
     id: "cta-1",
     title: "Call to Action",
-    image: "/waveink.png",
     category: "CTA",
     path: "/sections/cta/cta-1",
     description: "View the call to action section.",
@@ -39,7 +49,6 @@ const sectionCards: SectionCard[] = [
   {
     id: "testimonial-1",
     title: "Testimonial Slider",
-    image: "/abstract-black.png",
     category: "Testimonials",
     path: "/sections/testimonials/testimonial-1",
     description: "View the testimonial slider section.",
@@ -47,7 +56,6 @@ const sectionCards: SectionCard[] = [
   {
     id: "hero-2",
     title: "Hero Section 2",
-    image: "/waveink.png",
     category: "Hero",
     path: "/sections/hero/hero-2",
     description: "View the second hero section.",
@@ -55,7 +63,6 @@ const sectionCards: SectionCard[] = [
   {
     id: "feature-2",
     title: "Feature List",
-    image: "/neon.jpeg",
     category: "Features",
     path: "/sections/features/feature-2",
     description: "View the feature list section.",
@@ -78,21 +85,20 @@ export default function SectionsOverview() {
           </p>
         </div>
 
-        <div className="columns-1 sm:columns-2 lg:columns-2 gap-4 space-y-4">
+        <div className="columns-1 sm:columns-2 lg:columns-1 gap-4 space-y-4">
           {sectionCards.map((card) => (
             <Link
               href={card.path}
               key={card.id}
               className="block mb-4 break-inside-avoid"
             >
-              <div className="group bg-white rounded-2xl overflow-hidden border-2 border-sectifyLightPurple shadow-lg hover:shadow-xl transition-all duration-300">
-                <div className="relative h-72 w-full overflow-hidden">
-                  <Image
-                    src={card.image}
-                    alt={card.title}
-                    fill
-                    className="object-cover transform group-hover:scale-105 transition-transform duration-500"
-                  />
+              <div className="group bg-white rounded-2xl overflow-hidden border-b-8 border-sectifyLightPurple shadow-lg hover:shadow-xl transition-all duration-300">
+                <div className="relative h-screen w-full overflow-hidden">
+                  {card.component || (
+                    <div className="w-full h-full bg-gray-100 flex items-center justify-center">
+                      <span className="text-gray-400">Preview not available</span>
+                    </div>
+                  )}
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-70"></div>
                   <div className="absolute top-3 right-3 bg-sectifyGreen/90 backdrop-blur-sm text-white text-xs px-3 py-1 rounded-full font-medium shadow-md">
                     {card.category}
