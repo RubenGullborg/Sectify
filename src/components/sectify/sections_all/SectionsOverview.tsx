@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { GradientSection } from "@/components/sections/backgrounds/radial/radial-section";
 import BackgroundPaths from "@/components/sections/backgrounds/backgroundBeams/beam-section";
+import Component from "@/components/sections/backgrounds/Hypno/page";
 import { motion } from "framer-motion";
 
 interface SectionCard {
@@ -51,8 +52,14 @@ const sectionCards: SectionCard[] = [
       />
     ),
   },
-
- 
+  {
+    id: "hero-3",
+    title: "Hypno Background",
+    category: "Background",
+    path: "/components/hypno",
+    description: "A mesmerizing background component featuring dynamic halftone waves with color gradients and complex wave patterns.",
+    component: <Component />,
+  },
 ];
 
 export default function SectionsOverview() {

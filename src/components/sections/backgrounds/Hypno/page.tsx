@@ -37,19 +37,30 @@ export default function Component() {
           );
           const normalizedDistance = distanceFromCenter / maxDistance;
 
-          const waveOffset =
-            Math.sin(normalizedDistance * 10 - time) * 0.5 + 0.5;
-          const size = gridSize * waveOffset * 0.8;
+          // Create more complex wave patterns
+          const waveOffset1 = Math.sin(normalizedDistance * 10 - time) * 0.5 + 0.5;
+          const waveOffset2 = Math.cos(normalizedDistance * 8 + time * 0.7) * 0.5 + 0.5;
+          const waveOffset3 = Math.sin(normalizedDistance * 12 + time * 0.5) * 0.5 + 0.5;
+          
+          // Combine wave patterns
+          const combinedOffset = (waveOffset1 + waveOffset2 + waveOffset3) / 3;
+          const size = gridSize * combinedOffset * 0.8;
+
+          // Create gradient effect based on position
+          const hue = (normalizedDistance * 360 + time * 50) % 360;
+          const saturation = 70 + waveOffset1 * 30;
+          const lightness = 30 + waveOffset2 * 20;
 
           ctx.beginPath();
           ctx.arc(centerX, centerY, size / 2, 0, Math.PI * 2);
-          ctx.fillStyle = `rgba(255, 255, 255, ${waveOffset * 0.5})`;
+          ctx.fillStyle = `hsla(${hue}, ${saturation}%, ${lightness}%, ${combinedOffset * 0.5})`;
           ctx.fill();
         }
       }
     };
 
     const animate = () => {
+      // Create a subtle fade effect
       ctx.fillStyle = "rgba(0, 0, 0, 0.1)";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
