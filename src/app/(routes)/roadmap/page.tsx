@@ -34,7 +34,7 @@ const roadmapItems: RoadmapItem[] = [
 
 export default function roadmapPage(){
     return (
-      <div className="flex flex-col justify-center items-center min-h-screen bg-gradient-to-b from-black via-sectifyFairyTale/50 to-black py-36">
+      <div className="flex flex-col justify-center items-center min-h-screen bg-gradient-to-b from-black via-sectifyFairyTale/80 to-black py-36">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-sectifyLightPurple/10 via-transparent to-transparent opacity-50" />
         <div className="relative z-10">
           <Roadmap
@@ -43,7 +43,7 @@ export default function roadmapPage(){
           />
           <div className="pt-8">
             <p className="font-light text-center text-sectifyEggWhite/80">
-              💡 Want to contribute? Reach out to me on{" "}
+              💡 Want to <a href="https://github.com/rubengullborg/sectify" className="text-sectifyLightPurple hover:text-sectifyFairyTale transition-colors duration-300">contribute</a>? Reach out to me on{" "}
               <a
                 href="https://x.com/RubenGullborg"
                 className="text-sectifyLightPurple hover:text-sectifyFairyTale transition-colors duration-300"
@@ -52,8 +52,7 @@ export default function roadmapPage(){
               </a>
             </p>
             <p className="font-light text-sm text-center py-2 text-sectifyEggWhite/60">
-              I will open for GitHub Contributions as soon as the library has
-              matured a bit more 🚀
+              GitHub Contributions are open, help the library mature a bit more 🚀
             </p>
           </div>
         </div>

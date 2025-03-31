@@ -50,9 +50,9 @@ export default function CommunitySection(): React.ReactElement {
         />
       </div>
 
-      <div className="relative z-10 container mx-auto px-4 py-8 min-h-screen pt-32">
+      <div className="relative z-10 container mx-auto px-4 py-8 min-h-screen pt-44">
         {/* Hero Section */}
-        <motion.div 
+        <motion.div
           initial="initial"
           animate="animate"
           variants={fadeIn}
@@ -62,12 +62,13 @@ export default function CommunitySection(): React.ReactElement {
             Sectify Community
           </h1>
           <p className="text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
-            Built by the community, for the community. Join in developing the next generation of web sections.
+            Built by the community, for the community. Join in developing the
+            next generation of web sections.
           </p>
         </motion.div>
 
         {/* Vision Card */}
-        <motion.div 
+        <motion.div
           initial="initial"
           animate="animate"
           variants={fadeIn}
@@ -75,11 +76,12 @@ export default function CommunitySection(): React.ReactElement {
         >
           <h2 className="text-2xl font-semibold text-white mb-4">Our Vision</h2>
           <p className="text-white/70 leading-relaxed mb-6">
-            Sectify is built on the belief that the best solutions come from an active and engaged community. 
-            We strive to create an inclusive environment where developers can share their knowledge, contribute code, 
-            and help each other build better web applications.
+            Sectify is built on the belief that the best solutions come from an
+            active and engaged community. We strive to create an inclusive
+            environment where developers can share their knowledge, contribute
+            code, and help each other build better web applications.
           </p>
-          <Link 
+          <Link
             href="/community/contribute"
             className="inline-flex items-center px-8 py-3 rounded-full bg-gradient-to-r from-sectifyFairyTale to-sectifyLightPurple text-white font-medium hover:shadow-lg hover:shadow-sectifyGreen/20 transition-all duration-300 hover:scale-105"
           >
@@ -88,7 +90,7 @@ export default function CommunitySection(): React.ReactElement {
         </motion.div>
 
         {/* Features Grid */}
-        <motion.div 
+        <motion.div
           initial="initial"
           animate="animate"
           variants={fadeIn}
@@ -98,13 +100,15 @@ export default function CommunitySection(): React.ReactElement {
           <div className="group relative backdrop-blur-xl bg-white/[0.03] rounded-2xl border border-white/10 p-8 hover:bg-white/[0.05] transition-all duration-300">
             <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-sectifyGreen/20 to-sectifyLightPurple/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             <div className="relative z-10">
-              <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-sectifyGreen transition-colors">Hall of Fame</h3>
+              <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-sectifyGreen transition-colors">
+                Hall of Fame
+              </h3>
               <p className="text-white/70 leading-relaxed mb-4">
-                See the most valuable contributors to Sectify's development.
+                Contributors to Sectify's development.
               </p>
-              <Link 
+              <Link
                 href="/community/hall-of-fame"
-                className="text-sectifyGreen hover:text-sectifyFairyTale transition-colors inline-flex items-center"
+                className="text-sectifyGreen hover:text-sectifyEggWhite transition-colors inline-flex items-center"
               >
                 View Hall of Fame →
               </Link>
@@ -115,13 +119,15 @@ export default function CommunitySection(): React.ReactElement {
           <div className="group relative backdrop-blur-xl bg-white/[0.03] rounded-2xl border border-white/10 p-8 hover:bg-white/[0.05] transition-all duration-300">
             <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-sectifyGreen/20 to-sectifyLightPurple/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             <div className="relative z-10">
-              <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-sectifyGreen transition-colors">Discord Community</h3>
+              <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-sectifyGreen transition-colors">
+                Discord Community
+              </h3>
               <p className="text-white/70 leading-relaxed mb-4">
-                Join our Discord server for live discussions and support.
+                Join our Discord server for discussions and support.
               </p>
-              <Link 
+              <Link
                 href="/community/discord"
-                className="text-sectifyGreen hover:text-sectifyFairyTale transition-colors inline-flex items-center"
+                className="text-sectifyGreen hover:text-sectifyEggWhite transition-colors inline-flex items-center"
               >
                 Join Discord →
               </Link>
@@ -132,13 +138,15 @@ export default function CommunitySection(): React.ReactElement {
           <div className="group relative backdrop-blur-xl bg-white/[0.03] rounded-2xl border border-white/10 p-8 hover:bg-white/[0.05] transition-all duration-300">
             <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-sectifyGreen/20 to-sectifyLightPurple/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             <div className="relative z-10">
-              <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-sectifyGreen transition-colors">Contribution Guide</h3>
+              <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-sectifyGreen transition-colors">
+                Contribution Guide
+              </h3>
               <p className="text-white/70 leading-relaxed mb-4">
-                Learn how you can contribute to Sectify's development.
+                Learn how to contribute to Sectify's development.
               </p>
-              <Link 
+              <Link
                 href="/community/contribute"
-                className="text-sectifyGreen hover:text-sectifyFairyTale transition-colors inline-flex items-center"
+                className="text-sectifyGreen hover:text-sectifyEggWhite transition-colors inline-flex items-center"
               >
                 Read Guide →
               </Link>
@@ -147,25 +155,28 @@ export default function CommunitySection(): React.ReactElement {
         </motion.div>
 
         {/* Call to Action */}
-        <motion.div 
+        <motion.div
           initial="initial"
           animate="animate"
           variants={fadeIn}
           className="text-center backdrop-blur-xl bg-white/[0.03] border border-white/10 rounded-2xl p-8 mb-16"
         >
-          <h2 className="text-2xl font-semibold text-white mb-4">Ready to Participate?</h2>
+          <h2 className="text-2xl font-semibold text-white mb-4">
+            Ready to Participate?
+          </h2>
           <p className="text-white/70 leading-relaxed mb-6 max-w-2xl mx-auto">
-            Sectify is an open source project, and we love new contributors! Whether you're an experienced developer or just getting started, 
+            Sectify is an open source project, and we love new contributors!
+            Whether you're an experienced developer or just getting started,
             there's always a place for you in our community.
           </p>
           <div className="flex gap-4 justify-center">
-            <Link 
+            <Link
               href="/community/contribute"
               className="inline-flex items-center px-8 py-3 rounded-full bg-gradient-to-r from-sectifyFairyTale to-sectifyLightPurple text-white font-medium hover:shadow-lg hover:shadow-sectifyGreen/20 transition-all duration-300 hover:scale-105"
             >
               Contribute to Code →
             </Link>
-            <Link 
+            <Link
               href="/community/discord"
               className="inline-flex items-center px-8 py-3 rounded-full border border-sectifyGreen text-sectifyGreen hover:bg-sectifyGreen/10 transition-all duration-300"
             >

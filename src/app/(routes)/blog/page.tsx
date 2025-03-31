@@ -47,7 +47,7 @@ export default function BlogPage() {
             <a href="/roadmap" className="text-sectifyLightPurple hover:text-sectifyFairyTale transition-colors duration-300">
               roadmap
             </a>
-            {" "}or follow us on{" "}
+            {" "}or follow me on{" "}
             <a href="https://x.com/RubenGullborg" className="text-sectifyLightPurple hover:text-sectifyFairyTale transition-colors duration-300">
               X
             </a>

@@ -1,7 +1,7 @@
 import GettingStarted from '@/components/documentation/GettingStarted';
 import Installation from '@/components/documentation/Installation';
 import BasicUsage from '@/components/documentation/BasicUsage';
-import AdvancedFeatures from '@/components/documentation/AdvancedFeatures';
+import Contributions from '@/components/documentation/Contributions';
 
 export default function DocumentationPage() {
   return (
@@ -13,37 +13,32 @@ export default function DocumentationPage() {
           <nav className="space-y-2">
             <a
               href="#getting-started"
-              className="block py-1 px-2 hover:bg-sectifyLightPurple hover:text-sectifyEggWhite rounded transition"
+              className="block py-1 px-2 hover:text-sectifyFairyTale rounded transition"
             >
               • Getting Started
             </a>
             <a
               href="#installation"
-              className="block py-1 px-2 hover:bg-sectifyLightPurple hover:text-sectifyEggWhite rounded transition"
+              className="block py-1 px-2 hover:text-sectifyFairyTale rounded transition"
             >
               • Installation
             </a>
             <a
               href="#basic-usage"
-              className="block py-1 px-2 hover:bg-sectifyLightPurple hover:text-sectifyEggWhite rounded transition"
+              className="block py-1 px-2 hover:text-sectifyFairyTale rounded transition"
             >
               • Basic Usage
             </a>
             <a
               href="#advanced"
-              className="block py-1 px-2 hover:bg-sectifyLightPurple hover:text-sectifyEggWhite rounded transition"
+              className="block py-1 px-2 hover:text-sectifyFairyTale rounded transition"
             >
-              • Advanced Features
+              • Contribute
             </a>
-            <a
-              href="#api-reference"
-              className="block py-1 px-2 hover:bg-sectifyLightPurple hover:text-sectifyEggWhite rounded transition"
-            >
-              • API Reference
-            </a>
+            
             <a
               href="#examples"
-              className="block py-1 px-2 hover:bg-sectifyLightPurple hover:text-sectifyEggWhite rounded transition"
+              className="block py-1 px-2 hover:text-sectifyFairyTale rounded transition line-through"
             >
               • Examples
             </a>
@@ -56,7 +51,7 @@ export default function DocumentationPage() {
           <GettingStarted />
           <Installation />
           <BasicUsage />
-          <AdvancedFeatures />
+          <Contributions />
         </div>
       </div>
     </div>
