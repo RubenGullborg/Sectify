@@ -43,7 +43,14 @@ export default function roadmapPage(){
           />
           <div className="pt-8">
             <p className="font-light text-center text-sectifyEggWhite/80">
-              💡 Want to <a href="https://github.com/rubengullborg/sectify" className="text-sectifyLightPurple hover:text-sectifyFairyTale transition-colors duration-300">contribute</a>? Reach out to me on{" "}
+              💡 Want to be a part of the{" "}
+              <a
+                href="/community"
+                className="text-sectifyLightPurple hover:text-sectifyFairyTale transition-colors duration-300"
+              >
+                community
+              </a>
+              ? Reach out to me on{" "}
               <a
                 href="https://x.com/RubenGullborg"
                 className="text-sectifyLightPurple hover:text-sectifyFairyTale transition-colors duration-300"
@@ -52,7 +59,13 @@ export default function roadmapPage(){
               </a>
             </p>
             <p className="font-light text-sm text-center py-2 text-sectifyEggWhite/60">
-              GitHub Contributions are open, help the library mature a bit more 🚀
+              <a
+                href="https://github.com/rubengullborg/sectify"
+                className="text-sectifyLightPurple hover:text-sectifyFairyTale transition-colors duration-300"
+              >
+                GitHub Contributions
+              </a>{" "}
+              are open, help the library mature 🚀
             </p>
           </div>
         </div>

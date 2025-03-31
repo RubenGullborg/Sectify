@@ -19,7 +19,7 @@ const sectionCategories: SectionCategory[] = [
       {
         id: "hero-1",
         title: "Radial Dark Sun",
-        path: "/components/radial",
+        path: "/components/Hero-sections/radial",
       },
     ]
   },
