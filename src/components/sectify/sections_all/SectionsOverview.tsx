@@ -72,7 +72,7 @@ const sectionCategories: SectionCategory[] = [
 
 export default function SectionsOverview() {
   return (
-    <div className="bg-gradient-to-br  min-h-screen">
+    <div className="min-h-screen">
       <div className="container mx-auto px-4 py-16">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h1 className="text-7xl font-bold pb-4 bg-gradient-to-r from-sectifyGreen via-sectifyLightPurple to-sectifyFairyTale bg-clip-text text-transparent mb-6">
