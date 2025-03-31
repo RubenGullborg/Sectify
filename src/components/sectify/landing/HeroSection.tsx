@@ -12,15 +12,7 @@ export function FocusCardsDemo() {
       src: "/Splithero_splash_2.png",
       href: "/components/Hero-sections/SplitHero",
     },
-    {
-      title: "Sala behta hi jayega",
-      src: "/neon.jpeg",
-    },
-    {
-      title: "Camping is for pros",
-      src: "/strong.png",
-      href: "sections",
-    },
+  
   ];
 
   return <FocusCards cards={cards} />;
