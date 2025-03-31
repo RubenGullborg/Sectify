@@ -166,39 +166,45 @@ export default function UILibrariesPage() {
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-500/20 rounded-full blur-3xl" />
         <div className="absolute top-1/3 -left-20 w-80 h-80 bg-blue-500/20 rounded-full blur-3xl" />
         <div className="absolute -bottom-40 right-1/3 w-80 h-80 bg-teal-500/20 rounded-full blur-3xl" />
-        
+
         {/* Grid pattern */}
-        <div 
+        <div
           className="absolute inset-0 opacity-[0.02]"
           style={{
-            backgroundImage: "linear-gradient(#fff 1px, transparent 1px), linear-gradient(to right, #fff 1px, transparent 1px)",
-            backgroundSize: "40px 40px"
+            backgroundImage:
+              "linear-gradient(#fff 1px, transparent 1px), linear-gradient(to right, #fff 1px, transparent 1px)",
+            backgroundSize: "40px 40px",
           }}
         />
       </div>
-      
+
       <div className="relative z-10 container mx-auto px-4 pb-24 pt-40">
         <div className="max-w-4xl mx-auto text-center mb-20">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
             UI Libraries & Inspiration
           </h1>
-          <p className="text-xl text-white/70 max-w-3xl mx-auto">
-            Discover the best UI libraries, design systems, and resources to enhance your projects
-            and find inspiration for your next masterpiece.
+          <p className="text-xl text-sectifyEggWhite max-w-5xl mx-auto">
+            Discover the best UI libraries, design systems, and resources to
+            enhance your projects. 
+           
+              At Sectify UI we don't see us as competitors to these amazing
+              libraries. We are here to help you find the best UI components for
+              your projects, even if they are from other libraries.
+
           </p>
         </div>
 
         <div className="space-y-16">
-          {categories.map(category => (
+          {categories.map((category) => (
             <div key={category}>
               <h2 className="text-2xl font-bold text-white mb-8 border-b border-white/10 pb-2">
                 {category}
               </h2>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {uiLibraries
-                  .filter(lib => lib.category === category)
-                  .map(library => (
+                  .filter((lib) => lib.category === category)
+                  .map((library) => (
                     <a
                       key={library.name}
                       href={library.url}
@@ -209,7 +215,7 @@ export default function UILibrariesPage() {
                       <h3 className="text-lg font-semibold text-white group-hover:text-blue-400 transition-colors mb-4">
                         {library.name}
                       </h3>
-                      
+
                       <p className="text-sm text-gray-300 flex-grow">
                         {library.description}
                       </p>
