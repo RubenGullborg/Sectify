@@ -67,6 +67,14 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
                   Roadmap
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/ui-libraries"
+                  className="text-sectifyEggWhite/50 hover:text-sectifyLightPurple transition-colors text-sm"
+                >
+                  Inspiration
+                </Link>
+              </li>
             </ul>
           </div>
 

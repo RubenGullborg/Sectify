@@ -29,8 +29,8 @@ export default function RadialPage() {
     <>
       {/* Full-width preview at the top */}
       <GradientSection
-        title="Radial Gradient Section"
-        subtitle="A versatile component featuring customizable radial gradients"
+        title="Radial Dark Sun Section"
+        subtitle="A versatile component featuring customizable radial gradients, looking like the sun or the moon"
         primaryColor="#000428"
         secondaryColor="#004e92"
         tertiaryColor="#000000"
