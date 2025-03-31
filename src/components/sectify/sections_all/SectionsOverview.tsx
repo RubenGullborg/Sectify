@@ -26,21 +26,10 @@ const sectionCategories: SectionCategory[] = [
         title: "Basic Hero",
         path: "/components/Hero-sections/BasicHero",
       },
-    ],
-  },
-
-  {
-    name: "Background Components",
-    components: [
       {
-        id: "bg-1",
-        title: "Background Beams",
-        path: "/components/backgroundBeams",
-      },
-      {
-        id: "bg-2",
-        title: "Hypno Background",
-        path: "/components/hypno",
+        id: "hero-3",
+        title: "Split Hero",
+        path: "/components/Hero-sections/SplitHero",
       },
     ],
   },
@@ -49,31 +38,12 @@ const sectionCategories: SectionCategory[] = [
     components: [
       {
         id: "testimonial-1",
-        title: "Simple Testimonials",
-        path: "/components/testimonials/simple",
+        title: "Basic Testimonial",
+        path: "/components/Testimonials/BasicTestimonial",
       },
     ],
   },
-  {
-    name: "Gallery Sections",
-    components: [
-      {
-        id: "gallery-1",
-        title: "Grid Gallery",
-        path: "/components/gallery/grid",
-      },
-    ],
-  },
-  {
-    name: "Feature Sections",
-    components: [
-      {
-        id: "feature-1",
-        title: "Feature Grid",
-        path: "/components/features/grid",
-      },
-    ],
-  },
+  
 ];
 
 export default function SectionsOverview() {
