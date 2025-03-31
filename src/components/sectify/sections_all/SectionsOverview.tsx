@@ -21,8 +21,14 @@ const sectionCategories: SectionCategory[] = [
         title: "Radial Dark Sun",
         path: "/components/Hero-sections/radial",
       },
-    ]
+      {
+        id: "hero-2",
+        title: "Basic Hero",
+        path: "/components/Hero-sections/BasicHero",
+      },
+    ],
   },
+
   {
     name: "Background Components",
     components: [
@@ -36,7 +42,7 @@ const sectionCategories: SectionCategory[] = [
         title: "Hypno Background",
         path: "/components/hypno",
       },
-    ]
+    ],
   },
   {
     name: "Testimonial Sections",
@@ -46,7 +52,7 @@ const sectionCategories: SectionCategory[] = [
         title: "Simple Testimonials",
         path: "/components/testimonials/simple",
       },
-    ]
+    ],
   },
   {
     name: "Gallery Sections",
@@ -56,7 +62,7 @@ const sectionCategories: SectionCategory[] = [
         title: "Grid Gallery",
         path: "/components/gallery/grid",
       },
-    ]
+    ],
   },
   {
     name: "Feature Sections",
@@ -66,8 +72,8 @@ const sectionCategories: SectionCategory[] = [
         title: "Feature Grid",
         path: "/components/features/grid",
       },
-    ]
-  }
+    ],
+  },
 ];
 
 export default function SectionsOverview() {
